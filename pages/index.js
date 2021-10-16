@@ -1,209 +1,272 @@
 import Head from 'next/head'
+import React, { Component } from 'react';
+import week1 from '../data/week1.json';
+import week2 from '../data/week2.json';
+import week3 from '../data/week3.json';
+import week4 from '../data/week4.json';
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const weeks = [week1, week2, week3, week4];
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+class Home extends Component {
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+  constructor(props) {
+    super(props);
+    this.state = {
+      date: new Date(),
+    };
+  }
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+  formatDay = (num) => {
+    if (num == 1) {
+      return ""
+    } else if (num == 0) {
+      return "__6"
+    } else {
+      return "__" + String(num - 1) 
+    }
+  }
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+  changeDate = (direction) => {
+    if (direction == 'backward') {
+      this.state.date.setDate(this.state.date.getDate() - 1)
+    } else if (direction == 'forward') {
+      this.state.date.setDate(this.state.date.getDate() + 1)
+    }
+    // this.setState({date: this.state.date});
+    this.setState({week: this.getWeek()});
+  }
 
+  getWeek = () => {
+    // source: https://www.javatpoint.com/calculate-current-week-number-in-javascript
+    var oneJan =  new Date(this.state.date.getFullYear(), 0, 1);   
+    var numberOfDays =  Math.floor((this.state.date - oneJan) / (24 * 60 * 60 * 1000));
+    var result = Math.ceil((numberOfDays - 2) / 7);
+    var remainder = (result - 39) % 4
+    return remainder + 1
+  }
+
+  render() {
+
+    const date = this.state.date;
+
+    return (
+      <div className="container">
+        <script src="jquery-csv.js"></script>
+        <Head>
+          <title>Burwash Menu</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+
+        <main>
+          <div className='nav-bar'>
+            <a
+              href="https://vicu.utoronto.ca/hospitality-services/student-meal-plans-and-dining-hall-menus/burwash-dining-hall-and-neds-cafe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/crest.svg" alt="Vic Crest" className="logo-top" />
+            </a>
+          </div>
+          <div>
+            <h1 className='title'>Burwash Menu</h1>
+            <h2 className='title'>Week {this.getWeek()}</h2>
+            <div className='row-container'>
+              <button onClick={() => this.changeDate('backward')} className='arrow'>{'<'}</button>
+              <h2 className='subtitle'>{date.toDateString()}</h2>
+              <button onClick={() => this.changeDate('forward')} className='arrow'>{'>'}</button>
+            </div>
+            <table className='mainTable'>
+            { weeks[this.getWeek() - 1].map((row, index) => row[this.formatDay(this.state.date.getDay())] && row['Victoria University Food Services Burwash Dining Hall'] &&
+                  (row['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek() ? 
+                  <tr>
+                    <th className='heading'>{index == 0 ? 'LUNCH' : 'DINNER'}</th>
+                    <th>{row[this.formatDay(this.state.date.getDay())]}</th>
+                  </tr>
+                  :
+                  <tr>
+                    <td className='heading'>{row['Victoria University Food Services Burwash Dining Hall']}</td>
+                    <td>{row[this.formatDay(this.state.date.getDay())]}</td>
+                  </tr>
+                ))
+            }
+            </table>
+          </div>
+        </main>
+
+        <footer>
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
+            href="https://vicu.utoronto.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <img src="/crest.svg" alt="Vic Crest" className="logo" />
+            {' '}Abeunt Studia in Mores
           </a>
+        </footer>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
+        <style jsx>{`
+          .heading {
+            font-weight: bold;
           }
-        }
-      `}</style>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
+          .nav-bar {
+            position: absolute;
+            /* position: fixed; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            background: #A30031;
+            height: 80px;
+            z-index: 10;
+            -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+            -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+            box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+          }
 
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
-  )
+          main {
+            background-color: #ffffff;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            padding-top: 100px;
+            padding-bottom: 70px;
+            margin: 0 4%;
+          }
+
+          .title {
+            text-align: center;
+          }
+
+          .subtitle {
+            text-align: center;
+            color: #A30031;
+            padding-left: 18px;
+            padding-right: 18px;
+          }
+
+          
+          .mainTable {
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10px 10px 0px 0px;
+            overflow: hidden;
+          }
+
+          .mainTable th {
+            background-color: #A30031;
+            height: 50px;
+            color: #ffffff;
+          }
+
+          .mainTable tr {
+            background-color: #dfdfdf;
+            color: #161616;
+            width: 100%;
+            overflow: hidden;
+          }
+
+          .mainTable th,
+          .mainTable td {
+            padding: 12px 15px;
+          }
+
+          .mainTable th:first-child {
+            border-radius: 10px 0 0 0px;
+          }
+
+          .mainTable th:last-child {
+            border-radius: 0 10px 0px 0;
+          }
+
+          .mainTable tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+          }
+
+
+          .row-container {
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 35px;
+            display: flex;
+            flex-direcction: row;
+          }
+
+          .arrow {
+            background-color: #A30031;
+            border-radius: 10px;
+            border: none;
+            align-self: flex-start;
+            color: white;
+            padding: 8px 18px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 15px;
+          }
+
+          .arrow:hover {
+            background-color: #7A0025;
+          }
+
+          footer {
+            width: 100%;
+            height: 100px;
+            border-top: 1px solid #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          footer img {
+            margin-left: 0.5rem;
+          }
+
+          footer a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+
+          .logo-top {
+            height: 2.5em;
+          }
+
+          .logo {
+            height: 1.5em;
+            margin-right: 12px;
+          }
+
+          @media screen and (min-width: 0px) and (max-width: 650px) {
+            // .arrow {
+            //   align-self: none;
+            //   color: blue;
+            // }
+          }
+        `}</style>
+
+        <style jsx global>{`
+          html,
+          body {
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+              sans-serif;
+          }
+
+          * {
+            box-sizing: border-box;
+          }
+        `}</style>
+      </div>
+    )
+  }
 }
+
+export default Home;

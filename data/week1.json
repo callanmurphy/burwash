@@ -1,0 +1,292 @@
+[
+  {
+    "Victoria University Food Services Burwash Dining Hall": "WEEK 1",
+    "": "MONDAY",
+    "__1": "TUESDAY",
+    "__2": "WEDNESDAY",
+    "__3": "THURSDAY",
+    "__4": "FRIDAY",
+    "__5": "SATURDAY",
+    "__6": "SUNDAY"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "ALL-DAY",
+    "": "",
+    "__1": "",
+    "__2": "",
+    "__3": "",
+    "__4": "",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "SOUPS",
+    "": "Spinach and Red Lentil (GF)(VGN)\nTurkey Noodle (H)(DF)",
+    "__1": "Miso Broth With Tofu (GF)(VGN)\nBroccoli and Cheese (GF)(VEG)",
+    "__2": "Harvest Vegetable (GF)(VGN)\nBeef Vegetable Barley (DF)",
+    "__3": "Ginger, Carrot & Coconut (GF)(VGN)\nSmoky Mushroom\n(BACON ON SIDE)\n(GF)(VEG)",
+    "__4": "Hearty Minestrone (VGN)\nNew England Clam Chowder (GF)",
+    "__5": "Moroccan Chickpea (GF)(VGN)\nLemon Chicken Orzo (H)(DF)",
+    "__6": "Creamy Tomato (VEG)\nHot and Sour with Tofu (GF)(VGN)"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "MEAT PIZZA",
+    "": "",
+    "__1": "Chicken Alfredo (H)",
+    "__2": "",
+    "__3": "Hawaiian - Ham & Pineapple",
+    "__4": "",
+    "__5": "Pizza – Dinner Only Pepperoni Pizza",
+    "__6": "Pizza – Dinner Only Deluxe Pizza\nPepperoni, Bacon, Peppers"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "VEGETARIAN PIZZA",
+    "": "",
+    "__1": "Quattro Fromaggio Mozzarella, Parmesan,\nCheddar, Feta (VEG)",
+    "__2": "",
+    "__3": "Pineapple, Green olives and Banana Pepper rings\n(VEG)",
+    "__4": "",
+    "__5": "Cheesy Garlic Pizza Mozzarella, Garlic, Oregano (VEG)",
+    "__6": "Pizza – Dinner Only Double Cheese Pizza Cheddar and Mozzarella\n(VEG)"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "MEAT HOT SANDWICH",
+    "": "Grilled Cheese, Tomato, Bacon",
+    "__1": "",
+    "__2": "Chicken & Pesto Melt (H)",
+    "__3": "",
+    "__4": "BBQ Chicken Enchilada (SALSA & SOUR CREAM ON SIDE)",
+    "__5": "BREAKFAST FOR BRUNCH",
+    "__6": "BREAKFAST FOR BRUNCH"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "VEGETARIAN SANDWICH",
+    "": "Grilled Cheese and Tomato (VEG",
+    "__1": "",
+    "__2": "Roasted Cauliflower Wrap (VGN)",
+    "__3": "",
+    "__4": "Spicy Bean & Cheese Enchilada (SALSA & SOUR CREAM ON SIDE)\n(VEG)",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "COLD MEAT SANDWICH",
+    "": "Roast Turkey and Cheddar\nCheese on a Hoagie Bun",
+    "__1": "Roast Turkey and Cheddar\nCheese on a Hoagie Bun",
+    "__2": "Roast Turkey and Cheddar\nCheese on a Hoagie Bun",
+    "__3": "Roast Turkey and Cheddar\nCheese on a Hoagie Bun",
+    "__4": "Roast Turkey and Cheddar\nCheese on a Hoagie Bun",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "COLD VEGETARIAN SANDWICH",
+    "": "Roasted Red Pepper Hummus & Vegetable Wrap\n(VGN)",
+    "__1": "Balsamic Roasted Vegetable Feta Cheese on a Ciabatta (VEG)",
+    "__2": "Green Goddess Sandwich on an Onion Bun\n(VEG)",
+    "__3": "Caprese (Bocconcini, Basil,\nTomato) on a Kaiser (VEG)",
+    "__4": "Roasted Root Vegetable with Avocado and Arugula on a Baguette\n(VGN)",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "ROTATIONAL SANDWICH",
+    "": "Classic Egg Salad on a Wrap (VEG)",
+    "__1": "Deluxe Ham and Provolone Cheese on a Ciabatta",
+    "__2": "Roast Beef with Swiss Cheese on an Onion Bun",
+    "__3": "Tuna Salad on a Kaiser (H)",
+    "__4": "Tuscan Grilled Chicken with\nMozzarella on a Baguette (H)",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "ROTATIONAL COMPOSED\nSALAD",
+    "": "Greek Pasta Salad (VEG)",
+    "__1": "Greek Pasta Salad (VEG)",
+    "__2": "Quinoa Black Bean andCorn Salad(GF)(VGN)",
+    "__3": "Quinoa Black Bean and Corn Salad(GF)(VGN)",
+    "__4": "Bean and Chickpea Salad (GF)(VGN)",
+    "__5": "Bean and Chickpea Salad (GF)(VGN)",
+    "__6": "Chef’s Choice Salad (VEG)"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "MEAT FEATURED SALAD",
+    "": "Southwest Beef Bowl Smokey BBQ Beef Strips, Quinoa, Romaine Lettuce, Roasted Corn,\nTomato, Cucumber, Avocado, Green Onions",
+    "__1": "Mediterranean Chicken Bowl Grilled Chicken, Lettuce Cucumbers, Tomato, Black Olives, Chickpeas, Marinated Artichokes",
+    "__2": "Lime Salmon Bowl\nGrilled Lime Salmon, Spring Mix, Baby Spinach, Coconut Rice, Tomato, Cucumber, Avocado, Edamame",
+    "__3": "Grilled Teriyaki Steak Bowl Grilled Teriyaki Steak, Napa Cabbage, Roasted Mushroom, Carrots, Snow Peas, Baby Corn, Water Chestnuts",
+    "__4": "Chicken Tikka Salad Bowl Tandoori Grilled Chicken Breast, Iceberg Lettuce\nMini Potatoes, Tomato, Cucumber, Shredded Carrots,\nMango Juliennes, Garnished with Roasted Red Onions and",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "VEGETARIAN FEATURED SALAD",
+    "": "Southwest Tofu Bowl Seasoned Southwest Tofu Strips, Quinoa, Romaine Lettuce, Roasted Corn, Diced Tomato, Cucumber, Avocado, Green\nOnions",
+    "__1": "Mediterranean Falafel Bowl Falafel, Lettuce Cucumbers, Diced Tomato, Black Olives, Chickpeas, Marinated Artichokes",
+    "__2": "Lime Tofu Bowl Grilled Lime Tofu, Spring Mix, Baby Spinach, Coconut Rice, Tomato, Cucumber, Avocado,\nEdamame",
+    "__3": "Grilled Teriyaki Bowl\nGrilled Teriyaki Soy Chick’n, Napa Cabbage, Roasted Mushroom, Carrots, Snow Peas, Baby Corn, Water Chestnuts",
+    "__4": "Tofu Tikka Salad Bowl Tandoori Grilled Tofu,     Iceberg Lettuce, Mini Potatoes, Tomato, Cucumber, Carrots, Mango Juliennes, Garnished with\nRoasted Red Onions and Cilantro",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "FEATURED SALAD SIDES",
+    "": "Creamy Chipotle Cilantro Dressing\nSides: Shredded Cheese, Tortilla Chips, Salsa",
+    "__1": "Lemon Herb Dressing Sides: Feta Cheese, Pita",
+    "__2": "Pineapple Tajin Seasoning Dressing\nSides: Pickled Ginger, Chili Flakes, Nori",
+    "__3": "Asian Sesame Dressing Sides: Pickled Ginger",
+    "__4": "Yogurt Mint Dressing Sides: Naan Crisps",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "DESSERT",
+    "": "Chocolate Fudge Brownie",
+    "__1": "Raspberry Pudding Cake",
+    "__2": "Banana Chip Cake",
+    "__3": "Country Apple Cake",
+    "__4": "Butter Tarts",
+    "__5": "Nanaimo Bar",
+    "__6": "Strawberry Shortcake"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "",
+    "": "",
+    "__1": "",
+    "__2": "",
+    "__3": "",
+    "__4": "",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "",
+    "": "",
+    "__1": "",
+    "__2": "",
+    "__3": "",
+    "__4": "",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "Victoria University Food Services\nBurwash Dining Hall                                                                                                                                                                                                                                        2021-2022 Menu",
+    "": "",
+    "__1": "",
+    "__2": "",
+    "__3": "",
+    "__4": "",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "WEEK 1",
+    "": "MONDAY",
+    "__1": "TUESDAY",
+    "__2": "WEDNESDAY",
+    "__3": "THURSDAY",
+    "__4": "FRIDAY",
+    "__5": "SATURDAY",
+    "__6": "SUNDAY"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "LUNCH",
+    "": "",
+    "__1": "",
+    "__2": "",
+    "__3": "",
+    "__4": "",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "COMBO 1 - MEAT",
+    "": "Greek Style Grilled Chicken Breast\n(H)(GF)(DF)",
+    "__1": "Hot Italian Sausage\n(H)(GF)(DF)",
+    "__2": "Turkey Shepherd’s Pie\n(H)(GF)(DF)",
+    "__3": "Beef Burger with Bun\n(H)(GF)(DF)",
+    "__4": "Cedar Spiced Atlantic Salmon on a bed of Wilted Greens\n(H)(GF)(DF)\nWild Rice Pilaf (8oz)\n(VGN)(GF)",
+    "__5": "Brunch Entree Ginger Pork (GF)(DF)\nGrilled Ginger Tofu\n(GF)(VGN)\nStir-fried Noodles\n(GF)(VGN)\nBlanched Oriental vegetable Medley\n(GF)(VGN)\nMushroom (2PCS)",
+    "__6": "Brunch Entrée\nSweet & Sour Chicken Balls\n(H)\nSweet and Sour Veggie Chicken Tenders (GF)(VGN)\nJasmine Rice\n(GF)(VGN)\nSautéed Asian Vegetables\n(VGN)\nVegetable Eggroll (1PC)\n(VEG)"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "COMBO 1 –\nVEGETARIAN",
+    "": "Falafels (5PCS)\n(VGN)(GF)",
+    "__1": "Vegan Sausage\n(VGN)(GF)",
+    "__2": "Roasted vegetable Shepherd’s Pie (GF)(VGN)",
+    "__3": "Malibu Burger with Bun\n(VGN)(GF)",
+    "__4": "Vegetable Moussaka\n(VEG)\nWild Rice Pilaf (4oz)\n(VGN)(GF)",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "SIDES",
+    "": "Lemon Rice\n(VGN)(GF)\nChunky Vegetable & Chickpea Briam (VGN)(GF)\nGreek Pita(1 pc)\n(VEG)",
+    "__1": "Warm Potato Salad\n(VGN)\nOnion Rings\nRoasted Brussels Sprouts\n(VGN)(GF)\nSausage Buns\n(VEG)",
+    "__2": "Garlic Bread\n(VEG)\nRoasted Mushrooms\n(GF)(VGN)\nSautéed Swiss Chard\n(GF)(VGN)\nVegan Gravy\n(GF)(VGN)",
+    "__3": "Curly Fries\n(VGN)(GF)\nVegan Gravy\n(GF)(VGN)\nCheese Curds\n(ON ICE)\nWarm Roasted Corn and Pimento Salad\n(VGN)(GF)",
+    "__4": "Avocado Fries (3PC)\n(VGN)(GF)\nGlazed Carrots\n(VGN)(GF)",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "PORTION\nTOPPINGS",
+    "": "Tzatziki Sauce\n(ON SIDE)",
+    "__1": "Toppings; Pickles and\nBanana Pepper Rings\n(ON SIDE)",
+    "__2": "",
+    "__3": "Burger Toppings: Lettuce,\nTomato, Onion, Pickles\n(ON ICE)",
+    "__4": "",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "DINNER",
+    "": "",
+    "__1": "",
+    "__2": "",
+    "__3": "",
+    "__4": "",
+    "__5": "",
+    "__6": ""
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "COMBO 1 -\nMEAT",
+    "": "Korean Bulgogi Beef\n(H)(GF)(DF)",
+    "__1": "Karahi Chicken Curry\n(H)(GF)(DF)",
+    "__2": "Cajun Blackened Fish w/\nMango Salsa\n(H)",
+    "__3": "Thai Sweet Chili Pork Loin\n(GF)(DF)",
+    "__4": "Chicken Fajita\n(H)(GF)(DF)",
+    "__5": "Meatballs in Marinara\n(H)(GF)(DF)",
+    "__6": "Roasted Beef\n(H)(GF)(DF)\nAu Jus\n(H)(GF)(DF)"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "COMBO 1 –\nVEGETARIAN",
+    "": "Korean Spicy Bulgogi Tofu\n(GF)(VGN)",
+    "__1": "Red Lentil Dahl with Roasted Cauliflower (VGN)(GF)",
+    "__2": "Curried Jamaican Vegetable Stew\nGF)(VGN",
+    "__3": "Vegan Tofu and Mushroom Satay Curry\n(GF)(VGN)",
+    "__4": "Ground Soy, Bean Fajita with Bell Peppers\n(VGN)",
+    "__5": "Vegan Meatballs in Marinara\n(GF)(VGN)",
+    "__6": "Chickpea and Vegetable Osso Buco with Polenta (GF)(VGN)"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "SIDES",
+    "": "Vegetable Japchae (Glass Noodle Stir Fry) (VGN)\nSautéed Bok Choy\n(GF)(VGN)\nVegetable Dim Sum (3PCS)\n(VEG)",
+    "__1": "Basmati Rice\n(GF)(VGN)\nFresh Broccoli & Carrots Coins\n(GF)(VGN)\nGarlic Naan\n(VEG)",
+    "__2": "Black-eyed Peas and Rice\nGF) (VGN)\nWhole Roasted Okra\n(GF) (VGN\nFried Plantain\n(GF)(VGN)\nVegetable Jamaican Patties\n(VGN)",
+    "__3": "Jasmine Rice\n(GF)(VGN)\nTempura Vegetables\n(VEG)\nSweet Chili Green Beans\n(GF)(VGN)",
+    "__4": "Warm Flour Tortillas\n(VEG)\nMexican Rice with Corn\n(GF)(VGN)\nCalifornia Mix\n(GF)(VGN)\nJalapeno Poppers (2PCS)\n(VEG)",
+    "__5": "Spaghetti\n(VGN)\nSautéed Italian Vegetables\n(GF)(VGN)\nToasted Garlic Rolls\n(GF)(VGN)",
+    "__6": "Roasted Mini Potatoes\n(VEG)\nSteamed Garlic Asparagus\n(GF)(VGN)\nYorkshire Pudding\n(VEG)"
+  },
+  {
+    "Victoria University Food Services Burwash Dining Hall": "PORTION\nTOPPINGS",
+    "": "Spicy Homemade Kim Chi\n(VEG)",
+    "__1": "",
+    "__2": "",
+    "__3": "",
+    "__4": "Fajita Toppings: Shredded\nLettuce, Tomato, Cheese, Salsa, Guacamole, Jalapeno\n(ON ICE)",
+    "__5": "Parmesan Cheese\n(ON SIDE)",
+    "__6": "Horseradish and Dijon\nMustard"
+  }
+]
