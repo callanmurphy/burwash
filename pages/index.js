@@ -6,6 +6,7 @@ import week3 from '../data/week3.json';
 import week4 from '../data/week4.json';
 
 const weeks = [week1, week2, week3, week4];
+const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
 class Home extends Component {
 
@@ -76,18 +77,21 @@ class Home extends Component {
               <button onClick={() => this.changeDate('forward')} className='arrow'>{'>'}</button>
             </div>
             <table className='mainTable'>
-            { weeks[this.getWeek() - 1].map((row, index) => row[this.formatDay(this.state.date.getDay())] && row['Victoria University Food Services Burwash Dining Hall'] &&
-                  (row['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek() ? 
+            { weeks[this.getWeek() - 1].map((col, index) => 
+              ((col[this.formatDay(this.state.date.getDay())] != "" && col['Victoria University Food Services Burwash Dining Hall']) != "" || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER") ?
+                  ((col['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek()) || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ) ? 
                   <tr>
-                    <th className='heading'>{index == 0 ? 'LUNCH' : 'DINNER'}</th>
-                    <th>{row[this.formatDay(this.state.date.getDay())]}</th>
+                    <th className='heading'>{col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
+                    <th>{days[this.state.date.getDay()]}</th>
                   </tr>
                   :
                   <tr>
-                    <td className='heading'>{row['Victoria University Food Services Burwash Dining Hall']}</td>
-                    <td>{row[this.formatDay(this.state.date.getDay())]}</td>
+                    <td className='heading'>{col['Victoria University Food Services Burwash Dining Hall']}</td>
+                    <td>{col[this.formatDay(this.state.date.getDay())]}</td>
                   </tr>
-                ))
+                  :
+                  null
+                )
             }
             </table>
           </div>
