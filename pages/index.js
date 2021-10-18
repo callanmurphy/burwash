@@ -82,12 +82,12 @@ class Home extends Component {
                   ((col['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek()) || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ) ? 
                   <tr>
                     <th className='heading'>{col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
-                    <th>{days[this.state.date.getDay()]}</th>
+                    <th className='table-newline'>{days[this.state.date.getDay()]}</th>
                   </tr>
                   :
                   <tr>
                     <td className='heading'>{col['Victoria University Food Services Burwash Dining Hall']}</td>
-                    <td>{col[this.formatDay(this.state.date.getDay())]}</td>
+                    <td className='table-newline'>{col[this.formatDay(this.state.date.getDay())]}</td>
                   </tr>
                   :
                   null
@@ -98,11 +98,7 @@ class Home extends Component {
         </main>
 
         <footer>
-          <a
-            href="https://vicu.utoronto.ca/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://vicu.utoronto.ca/" target="_blank" rel="noopener noreferrer">
             <img src="/crest.svg" alt="Vic Crest" className="logo" />
             {' '}Abeunt Studia in Mores
           </a>
@@ -145,15 +141,14 @@ class Home extends Component {
 
           .subtitle {
             text-align: center;
+            width: 250px;
             color: #A30031;
-            padding-left: 18px;
-            padding-right: 18px;
           }
-
           
           .mainTable {
             margin: 0 auto;
             text-align: center;
+            width: 80%;
             border-radius: 10px 10px 0px 0px;
             overflow: hidden;
           }
@@ -186,6 +181,11 @@ class Home extends Component {
 
           .mainTable tr:nth-of-type(even) {
             background-color: #f3f3f3;
+          }
+
+          .table-newline {
+            white-space: pre-line;
+            width: 70%;
           }
 
 
@@ -228,7 +228,6 @@ class Home extends Component {
 
           footer a {
             display: flex;
-            justify-content: center;
             align-items: center;
           }
 
@@ -251,6 +250,9 @@ class Home extends Component {
             //   align-self: none;
             //   color: blue;
             // }
+            .mainTable {
+              width: 95%;
+            }
           }
         `}</style>
 
