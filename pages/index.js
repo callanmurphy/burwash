@@ -75,12 +75,8 @@ class Home extends Component {
 
         <main>
           <div className='nav-bar'>
-            <a
-              href="https://vicu.utoronto.ca/hospitality-services/student-meal-plans-and-dining-hall-menus/burwash-dining-hall-and-neds-cafe/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/crest.svg" alt="Vic Crest" className="logo-top" />
+            <a href="." >
+              <img src="/crest-outlined.png" alt="Vic Crest" className="logo-top" />
             </a>
           </div>
           <div>
