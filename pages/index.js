@@ -85,7 +85,7 @@ class Home extends Component {
           </div>
           <div>
             <h1 className='title'>Burwash Menu</h1>
-            <h2 className='title'>Week {this.getWeek()}</h2>
+            <h2 className='title2'>Week {this.getWeek()}</h2>
             <div className='row-container'>
               <button onClick={() => this.changeDate('backward')} className='arrow'>
                 <img src="/arrow.svg" alt="Left Arrow" className="left-arrow" />
@@ -108,7 +108,7 @@ class Home extends Component {
                   ((col['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek()) || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ) ? 
                   <tr>
                     <th className='heading'>{col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
-                    <th className='table-newline'>{days[this.state.date.getDay()]}</th>
+                    <th className='heading table-newline'>{days[this.state.date.getDay()]}</th>
                   </tr>
                   :
                   <tr>
@@ -125,14 +125,14 @@ class Home extends Component {
 
         <footer>
           <a href="https://vicu.utoronto.ca/" target="_blank" rel="noopener noreferrer">
-            <img src="/crest.svg" alt="Vic Crest" className="logo" />
+            <img src="/crest.png" alt="Vic Crest" className="logo" />
             {' '}Abeunt Studia in Mores
           </a>
         </footer>
 
         <style jsx>{`
           .heading {
-            font-weight: 600;
+            font-weight: 500;
           }
 
           .nav-bar {
@@ -163,7 +163,12 @@ class Home extends Component {
 
           .title {
             text-align: center;
-            font-weight: 500;
+            font-weight: 400;
+          }
+
+          .title2 {
+            text-align: center;
+            font-weight: 300;
           }
 
           h2 {
@@ -174,7 +179,7 @@ class Home extends Component {
             text-align: center;
             width: 200px;
             color: #A30031;
-            font-weight: normal;
+            font-weight: 400;
           }
 
           .other-day {
@@ -187,6 +192,7 @@ class Home extends Component {
             width: 80%;
             border-radius: 10px 10px 0px 0px;
             overflow: hidden;
+            font-weight: 300;
           }
 
           .mainTable th {
@@ -265,6 +271,7 @@ class Home extends Component {
           }
 
           footer {
+            font-weight: 300;
             width: 100%;
             height: 100px;
             border-top: 1px solid #eaeaea;
