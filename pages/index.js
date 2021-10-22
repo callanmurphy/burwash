@@ -90,7 +90,9 @@ class Home extends Component {
               <button onClick={() => this.changeDate('backward')} className='arrow'>
                 <img src="/arrow.svg" alt="Left Arrow" className="left-arrow" />
               </button>
-              <h2 className={this.state.date.getDate() == new Date().getDate() && this.state.date.getMonth() == new Date().getMonth() ? 'subtitle' : 'subtitle other-day' }>{date.toDateString()}</h2>
+              <h2 className={this.state.date.getDate() == new Date().getDate() && this.state.date.getMonth() == new Date().getMonth() ? 'subtitle' : 'subtitle other-day' }>
+                {date.toDateString().replace('2021', '').replace('2022', '')}
+              </h2>
               <button onClick={() => this.changeDate('forward')} className='arrow'>
                 <img src="/arrow.svg" alt="Right Arrow" className="right-arrow" />
               </button>
@@ -170,7 +172,7 @@ class Home extends Component {
 
           .subtitle {
             text-align: center;
-            width: 260px;
+            width: 200px;
             color: #A30031;
             font-weight: normal;
           }
