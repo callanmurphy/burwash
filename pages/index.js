@@ -32,6 +32,8 @@ class Home extends Component {
       this.state.date.setDate(this.state.date.getDate() - 1)
     } else if (direction == 'forward') {
       this.state.date.setDate(this.state.date.getDate() + 1)
+    } else {
+      this.setState({date: new Date()})
     }
     // this.setState({date: this.state.date});
     this.setState({week: this.getWeek()});
@@ -42,7 +44,7 @@ class Home extends Component {
     var oneJan =  new Date(this.state.date.getFullYear(), 0, 1);   
     var numberOfDays =  Math.floor((this.state.date - oneJan) / (24 * 60 * 60 * 1000));
     var result = Math.ceil((numberOfDays - 2) / 7);
-    var remainder = (result - 39) % 4
+    var remainder = (result - -1) % 4
     return remainder + 1
   }
 
@@ -56,6 +58,17 @@ class Home extends Component {
         <Head>
           <title>Burwash Menu</title>
           <link rel="icon" href="/favicon.ico" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KKXSS6LDE"/>
+          <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1KKXSS6LDE', { page_path: window.location.pathname });
+            `,
+          }}
+        />
         </Head>
 
         <main>
@@ -72,10 +85,19 @@ class Home extends Component {
             <h1 className='title'>Burwash Menu</h1>
             <h2 className='title'>Week {this.getWeek()}</h2>
             <div className='row-container'>
-              <button onClick={() => this.changeDate('backward')} className='arrow'>{'<'}</button>
-              <h2 className='subtitle'>{date.toDateString()}</h2>
-              <button onClick={() => this.changeDate('forward')} className='arrow'>{'>'}</button>
+              <button onClick={() => this.changeDate('backward')} className='arrow'>
+                <img src="/arrow.svg" alt="Left Arrow" className="left-arrow" />
+              </button>
+              <h2 className={this.state.date.getDate() == new Date().getDate() && this.state.date.getMonth() == new Date().getMonth() ? 'subtitle' : 'subtitle other-day' }>{date.toDateString()}</h2>
+              <button onClick={() => this.changeDate('forward')} className='arrow'>
+                <img src="/arrow.svg" alt="Right Arrow" className="right-arrow" />
+              </button>
             </div>
+            {/* <div className='row-container'>
+              <button onClick={() => this.changeDate()} className={this.state.date.getDate() != new Date().getDate() ? 'arrow not-today' : 'arrow today'}>
+                <img src="/undo.svg" alt="Undo" className="undo" />
+              </button>
+            </div> */}
             <table className='mainTable'>
             { weeks[this.getWeek() - 1].map((col, index) => 
               ((col[this.formatDay(this.state.date.getDay())] != "" && col['Victoria University Food Services Burwash Dining Hall']) != "" || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER") ?
@@ -139,10 +161,18 @@ class Home extends Component {
             text-align: center;
           }
 
+          h2 {
+            font-size: 26px
+          }
+
           .subtitle {
             text-align: center;
-            width: 250px;
+            width: 260px;
             color: #A30031;
+          }
+
+          .other-day {
+            color: black;
           }
           
           .mainTable {
@@ -180,7 +210,7 @@ class Home extends Component {
           }
 
           .mainTable tr:nth-of-type(even) {
-            background-color: #f3f3f3;
+            background-color: #f7f7f7;
           }
 
           .table-newline {
@@ -192,9 +222,9 @@ class Home extends Component {
           .row-container {
             justify-content: center;
             text-align: center;
-            padding-bottom: 35px;
             display: flex;
-            flex-direcction: row;
+            flex-direction: row;
+            margin-bottom: 30px;
           }
 
           .arrow {
@@ -206,7 +236,22 @@ class Home extends Component {
             padding: 8px 18px;
             font-size: 20px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 7px;
+          }
+
+          .today {
+            margin-top: -30px;
+            opacity: 30%;
+            cursor: auto;
+          }
+
+          .not-today {
+            margin-top: -30px;
+            opacity: 100%;
+          }
+          
+          .undo {
+            width: 40px;
           }
 
           .arrow:hover {
@@ -228,7 +273,9 @@ class Home extends Component {
 
           footer a {
             display: flex;
+            width: 600px;
             align-items: center;
+            justify-content center;
           }
 
           a {
@@ -238,6 +285,15 @@ class Home extends Component {
 
           .logo-top {
             height: 2.5em;
+          }
+
+          .right-arrow {
+            height: 2em;
+          }
+
+          .left-arrow {
+            height: 2em;
+            transform: rotate(180deg);
           }
 
           .logo {
@@ -251,7 +307,7 @@ class Home extends Component {
             //   color: blue;
             // }
             .mainTable {
-              width: 95%;
+              width: 98%;
             }
           }
         `}</style>
