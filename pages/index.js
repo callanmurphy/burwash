@@ -57,6 +57,8 @@ class Home extends Component {
         <script src="jquery-csv.js"></script>
         <Head>
           <title>Burwash Menu</title>
+          <link rel="apple-touch-icon" href="/crest.png" />
+          <link rel="apple-touch-startup-image" href="/crest.png" />
           <link rel="icon" href="/favicon.ico" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KKXSS6LDE"/>
           <script
