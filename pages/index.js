@@ -128,7 +128,7 @@ class Home extends Component {
 
         <style jsx>{`
           .heading {
-            font-weight: bold;
+            font-weight: 600;
           }
 
           .nav-bar {
@@ -151,7 +151,7 @@ class Home extends Component {
 
           main {
             background-color: #ffffff;
-            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             padding-top: 100px;
             padding-bottom: 70px;
             margin: 0 4%;
@@ -159,6 +159,7 @@ class Home extends Component {
 
           .title {
             text-align: center;
+            font-weight: 500;
           }
 
           h2 {
@@ -169,6 +170,7 @@ class Home extends Component {
             text-align: center;
             width: 260px;
             color: #A30031;
+            font-weight: normal;
           }
 
           .other-day {
@@ -236,7 +238,7 @@ class Home extends Component {
             padding: 8px 18px;
             font-size: 20px;
             cursor: pointer;
-            margin-top: 7px;
+            margin-top: 10px;
           }
 
           .today {
@@ -288,11 +290,11 @@ class Home extends Component {
           }
 
           .right-arrow {
-            height: 2em;
+            height: 1.7em;
           }
 
           .left-arrow {
-            height: 2em;
+            height: 1.7em;
             transform: rotate(180deg);
           }
 
