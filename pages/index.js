@@ -57,6 +57,9 @@ class Home extends Component {
         <script src="jquery-csv.js"></script>
         <Head>
           <title>Burwash Menu</title>
+          <meta name="description" content="Burwash Dining Hall Menu (2021-2022) – Victoria University, Toronto ON. 
+          See what's on for dinner by clicking through the daily schedule." />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
           <link rel="apple-touch-startup-image" href="/splash.png" />
           <link rel="icon" href="/favicon.ico" />
