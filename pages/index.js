@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React, { Component } from 'react';
+import Countdown from './countdown';
 import week1 from '../data/week1.json';
 import week2 from '../data/week2.json';
 import week3 from '../data/week3.json';
@@ -95,6 +96,7 @@ class Home extends Component {
               <button onClick={() => this.changeDate('forward')} className='arrow'>
                 <img src="/arrow.svg" alt="Right Arrow" className="right-arrow" />
               </button>
+              {/* <Countdown /> */}
             </div>
             {/* <div className='row-container'>
               <button onClick={() => this.changeDate()} className={this.state.date.getDate() != new Date().getDate() ? 'arrow not-today' : 'arrow today'}>
