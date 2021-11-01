@@ -122,6 +122,14 @@ class Home extends Component {
             }
             </table>
           </div>
+          {/* <div>
+            <ul className="title2 space">
+              <p>Breakfast 7:30 a.m. - 10:30 a.m.</p>
+              <p>(Light Breakfast from 10:30 a.m. - 11:00 a.m.)</p>
+              <p>Lunch 11:00 a.m. - 3:30 p.m.</p>
+              <p>Dinner 4:00-7:30 p.m.</p>
+            </ul>
+          </div> */}
         </main>
 
         <footer>
@@ -170,6 +178,10 @@ class Home extends Component {
           .title2 {
             text-align: center;
             font-weight: 300;
+          }
+
+          .space {
+            padding-top: 50px;
           }
 
           h2 {
