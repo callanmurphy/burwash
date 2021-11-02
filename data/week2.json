@@ -292,7 +292,7 @@
   {
     "Victoria University Food Services Burwash Dining Hall": "COMBO 1 - MEAT",
     "": "Asian BBQ Beef Brisket with Bean Sprout Garnish (H)(GF)(DF)",
-    "__1": "",
+    "__1": "BBQ Pork Ribs\n(GF)(DF)",
     "__2": "Deconstructed Beef Pot Pie\n(H)(DF)",
     "__3": "House Roasted Turkey\n(H)(GF)(DF)\nSage Infused Gravy\n(H)(GF)(DF)",
     "__4": "Veal Parmesan",
@@ -300,19 +300,9 @@
     "__6": "Chili Lime Tilapia with Sautéed Corn (H)(GF)(DF)"
   },
   {
-    "Victoria University Food Services Burwash Dining Hall": "",
-    "": "",
-    "__1": "(GF)(DF)",
-    "__2": "",
-    "__3": "",
-    "__4": "",
-    "__5": "",
-    "__6": ""
-  },
-  {
     "Victoria University Food Services Burwash Dining Hall": "COMBO 1 –\nVEGETARIAN",
     "": "Thai Sweet Chili Tofu and Vegetable Stir-fry (GF)(VGN)",
-    "__1": "",
+    "__1": "BBQ Tofu with Vegetables\n(GF)(VGN)",
     "__2": "Deconstructed Garden Vegetable, Mushroom and Beans Pot Pie\n(VEG)",
     "__3": "Harissa-Spiced White Bean Cassoulet (GF)(VGN)",
     "__4": "Eggplant Parmesan\n(VEG)",
@@ -320,54 +310,14 @@
     "__6": "Chili Lime Beyond Meat Strips with Sautéed Corn (GF)(VGN)"
   },
   {
-    "Victoria University Food Services Burwash Dining Hall": "",
-    "": "",
-    "__1": "(GF)(VGN)",
-    "__2": "",
-    "__3": "",
-    "__4": "",
-    "__5": "",
-    "__6": ""
-  },
-  {
     "Victoria University Food Services Burwash Dining Hall": "SIDES",
     "": "Vegetable Pad Thai\n(GF)(VGN)\nGarlic Sautéed Asian Broccoli (GF)(VGN)",
-    "__1": "",
+    "__1": "Sauteed Cheddar Perogies with Green Onion\n(VEG)\nSteamed Vegetables New England\n(GF)(VGN)\nCreamy Coleslaw\n(VEG)(GF)",
     "__2": "Puff Pastry Squares\n(VGN)\nSteamed Rice\n(GF)(VGN)\nOnion Rings\n(VGN)\nSautéed Asparagus\n(GF)(VGN)",
-    "__3": "Garlic and Parsley Potato Mash\n(GF)(VGN)\nItalian Vegetable Medley\n(GF)(VGN)",
-    "__4": "Buttered Egg Noodles\n(VEG)\nSautéed Yellow and Green Zucchini with Tomatoes (GF)(VGN)",
+    "__3": "Garlic and Parsley Potato Mash\n(GF)(VGN)\nItalian Vegetable Medley\n(GF)(VGN)\nCheesy Flatbread\n(VEG)",
+    "__4": "Buttered Egg Noodles\n(VEG)\nSautéed Yellow and Green Zucchini with Tomatoes (GF)(VGN)\nGarlic Toast\n(VEG)",
     "__5": "Corn & Flour Taco Shells\n(GF)(VGN)\nLime and Cilantro Rice\n(GF)(VGN)\nSautéed Corn, Jalapeno, and Peppers\n(GF)(VGN)",
-    "__6": "Brown Vegetable Fried Rice\n(GF)(VGN)\nGreen Beans and Baby Carrots (GF)(VGN)"
-  },
-  {
-    "Victoria University Food Services Burwash Dining Hall": "",
-    "": "",
-    "__1": "",
-    "__2": "",
-    "__3": "",
-    "__4": "",
-    "__5": "",
-    "__6": ""
-  },
-  {
-    "Victoria University Food Services Burwash Dining Hall": "",
-    "": "",
-    "__1": "(VEG)\nSteamed Vegetables New England\n(GF)(VGN)",
-    "__2": "",
-    "__3": "",
-    "__4": "",
-    "__5": "",
-    "__6": ""
-  },
-  {
-    "Victoria University Food Services Burwash Dining Hall": "",
-    "": "Vegetable Spring Rolls\n(2PC)\n(VGN)",
-    "__1": "Creamy Coleslaw\n(VEG) (GF)",
-    "__2": "",
-    "__3": "Cheesy Flatbread\n(VEG)",
-    "__4": "Garlic Toast\n(VEG)",
-    "__5": "",
-    "__6": "Jalapeno Bottle Caps\n(VEG)"
+    "__6": "Brown Vegetable Fried Rice\n(GF)(VGN)\nGreen Beans and Baby Carrots\n(GF)(VGN)\nJalapeno Bottle Caps\n(VEG)"
   },
   {
     "Victoria University Food Services Burwash Dining Hall": "PORTION TOPPINGS",
