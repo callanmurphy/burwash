@@ -179,7 +179,7 @@ class Home extends Component {
             right: 0px;
             width: 100%;
             background: #FFFF60;
-            height: 50px;
+            // height: 50px;
             z-index: 20;
             padding-left: 50px;
             padding-right: 50px;
