@@ -80,7 +80,7 @@ class Home extends Component {
         <main>
           <div className='alert-bar'>
             <div className='inline'>
-              <h2>Lunch and Dinner menu has been swapped for today! (dinner: Indian Butter Chicken)</h2>
+              <h2>Lunch and Dinner menu has swapped for today! (Dinner: Indian Butter Chicken)</h2>
             </div>
           </div>
           <div className='nav-bar'>
