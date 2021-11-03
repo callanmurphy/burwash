@@ -78,6 +78,11 @@ class Home extends Component {
         </Head>
 
         <main>
+          <div className='alert-bar'>
+            <div className='inline'>
+              <h2>Lunch and Dinner menu has been swapped for today! (dinner: Indian Butter Chicken)</h2>
+            </div>
+          </div>
           <div className='nav-bar'>
             <a href="." >
               <img src="/crest-outlined.png" alt="Vic Crest" className="logo-top" />
@@ -161,6 +166,36 @@ class Home extends Component {
             -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
             box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
           }
+
+          .alert-bar {
+            position: absolute;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            background: #FFFF60;
+            height: 50px;
+            z-index: 20;
+            padding-left: 50px;
+            padding-right: 50px;
+            -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+            -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+            box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+          }
+
+          .alert-bar h2 {
+            font-size: 16px;
+          }
+
+          // .inline {
+          //   display: flex;
+          //   align-items: center;
+          // }
 
           main {
             background-color: #ffffff;
