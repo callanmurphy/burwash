@@ -183,6 +183,8 @@ class Home extends Component {
             z-index: 20;
             padding-left: 50px;
             padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
             -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
             -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
             box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
