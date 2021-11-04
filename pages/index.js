@@ -78,11 +78,11 @@ class Home extends Component {
         </Head>
 
         <main>
-          <div className='alert-bar'>
+          {/* <div className='alert-bar'>
             <div className='inline'>
               <h2>Lunch and Dinner menu has swapped for today! (Dinner: Indian Butter Chicken)</h2>
             </div>
-          </div>
+          </div> */}
           <div className='nav-bar'>
             <a href="." >
               <img src="/crest-outlined.png" alt="Vic Crest" className="logo-top" />
