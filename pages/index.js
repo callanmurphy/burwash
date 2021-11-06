@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React, { Component } from 'react';
-import Countdown from './countdown';
 import week1 from '../data/week1.json';
 import week2 from '../data/week2.json';
 import week3 from '../data/week3.json';
@@ -51,7 +50,7 @@ class Home extends Component {
 
   render() {
 
-    const date = this.state.date;
+    const today = this.state.date;
 
     return (
       <div className="container">
@@ -95,46 +94,65 @@ class Home extends Component {
               <button onClick={() => this.changeDate('backward')} className='arrow'>
                 <img src="/arrow.svg" alt="Left Arrow" className="left-arrow" />
               </button>
-              <h2 className={this.state.date.getDate() == new Date().getDate() && this.state.date.getMonth() == new Date().getMonth() ? 'subtitle' : 'subtitle other-day' }>
-                {date.toDateString().replace('2021', '').replace('2022', '')}
+              <h2 className={today.getDate() == new Date().getDate() && today.getMonth() == new Date().getMonth() ? 'subtitle' : 'subtitle other-day' }>
+                {today.toDateString().replace('2021', '').replace('2022', '')}
               </h2>
               <button onClick={() => this.changeDate('forward')} className='arrow'>
                 <img src="/arrow.svg" alt="Right Arrow" className="right-arrow" />
               </button>
-              {/* <Countdown /> */}
             </div>
             {/* <div className='row-container'>
               <button onClick={() => this.changeDate()} className={this.state.date.getDate() != new Date().getDate() ? 'arrow not-today' : 'arrow today'}>
                 <img src="/undo.svg" alt="Undo" className="undo" />
               </button>
             </div> */}
-            <table className='mainTable'>
-            { weeks[this.getWeek() - 1].map((col, index) => 
-              ((col[this.formatDay(this.state.date.getDay())] != "" && col['Victoria University Food Services Burwash Dining Hall']) != "" || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER") ?
-                  ((col['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek()) || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ) ? 
-                  <tr>
-                    <th className='heading'>{col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
-                    <th className='heading table-newline'>{days[this.state.date.getDay()]}</th>
-                  </tr>
-                  :
-                  <tr>
-                    <td className='heading'>{col['Victoria University Food Services Burwash Dining Hall']}</td>
-                    <td className='table-newline'>{col[this.formatDay(this.state.date.getDay())]}</td>
-                  </tr>
-                  :
-                  null
-                )
+            { (today.getMonth() == 11 && today.getDate() > 21) || (today.getMonth() == 0 && today.getDate() < 9) ?
+              <div className='center'>
+                <b>Closed for Winter Break</b>
+              </div>
+            : <div>
+                {today.getMonth() == 0 && today.getDate() == 9 &&
+                  <div className='center space-below'>
+                    <b>Dinner Only (first meal of 2022)</b>
+                  </div>
+                }
+                <table className='mainTable'>
+                { weeks[this.getWeek() - 1].map((col, index) => 
+                  ((col[this.formatDay(today.getDay())] != "" && col['Victoria University Food Services Burwash Dining Hall']) != "" || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER") ?
+                      ((col['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek()) || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ) ? 
+                      <tr>
+                        <th className='heading'>{col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
+                        <th className='heading table-newline'>{days[today.getDay()]}</th>
+                      </tr>
+                      :
+                      <tr>
+                        <td className='heading'>{col['Victoria University Food Services Burwash Dining Hall']}</td>
+                        <td className='table-newline'>{col[this.formatDay(today.getDay())]}</td>
+                      </tr>
+                      :
+                      null
+                    )
+                }
+                </table>
+                <div>
+                  { today.getDay() == 0 || today.getDay() == 6 ?
+                    <div className="title2 space-above">
+                      <b>Saturday, Sunday & Holidays</b>
+                      <p>Brunch 10:00 a.m. - 2:30 p.m.</p>
+                      <p>Dinner 4:00-7:30 p.m.</p>
+                    </div> :
+                    <div className="title2 space-above">
+                        <b>Monday – Friday</b>
+                        <p>Breakfast 7:30 a.m. - 10:30 a.m.</p>
+                        <p>(Light Breakfast from 10:30 a.m. - 11:00 a.m.)</p>
+                        <p>Lunch 11:00 a.m. - 3:30 p.m.</p>
+                        <p>Dinner 4:00-7:30 p.m.</p>
+                    </div>
+                  }
+                </div>
+              </div>
             }
-            </table>
           </div>
-          {/* <div>
-            <ul className="title2 space">
-              <p>Breakfast 7:30 a.m. - 10:30 a.m.</p>
-              <p>(Light Breakfast from 10:30 a.m. - 11:00 a.m.)</p>
-              <p>Lunch 11:00 a.m. - 3:30 p.m.</p>
-              <p>Dinner 4:00-7:30 p.m.</p>
-            </ul>
-          </div> */}
         </main>
 
         <footer>
@@ -183,8 +201,8 @@ class Home extends Component {
             z-index: 20;
             padding-left: 50px;
             padding-right: 50px;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
             -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
             box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
@@ -203,7 +221,7 @@ class Home extends Component {
             background-color: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             padding-top: 100px;
-            padding-bottom: 70px;
+            padding-bottom: 40px;
             margin: 0 4%;
           }
 
@@ -217,8 +235,16 @@ class Home extends Component {
             font-weight: 300;
           }
 
-          .space {
-            padding-top: 50px;
+          .center {
+            text-align: center;
+          }
+
+          .space-above {
+            padding-top: 45px;
+          }
+
+          .space-below {
+            padding-bottom: 40px;
           }
 
           h2 {
@@ -331,12 +357,11 @@ class Home extends Component {
           }
 
           footer img {
-            margin-left: 0.5rem;
+            // margin-left: 0.5rem;
           }
 
           footer a {
             display: flex;
-            width: 600px;
             align-items: center;
             justify-content center;
           }
