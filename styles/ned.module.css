@@ -23,6 +23,11 @@
   font-weight: 400;
 }
 
+.schedule-title {
+  color: #58ad60;
+  font-weight: 600;
+}
+
 .mainTable th {
   background-color: #58ad60;
   height: 50px;

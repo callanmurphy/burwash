@@ -142,27 +142,48 @@ class Home extends Component {
                     )
                 }
                 </table>
-                <div id='schedule'>
-                  { today.getDay() == 0 || today.getDay() == 6 ?
-                    <div className="title2 space-above">
-                      <b>Saturday, Sunday & Holidays</b>
-                      <p>Brunch 10:00 a.m. - 2:30 p.m.</p>
-                      <p>Dinner 4:00-7:30 p.m.</p>
-                    </div> :
-                    <div className="title2 space-above">
-                        <b>Monday – Friday</b>
-                        <p>Breakfast 7:30 a.m. - 10:30 a.m.</p>
-                        <p>(Light Breakfast from 10:30 a.m. - 11:00 a.m.)</p>
-                        <p>Lunch 11:00 a.m. - 3:30 p.m.</p>
+                { menu.name == 'burwash' ?
+                  <div id='schedule' className={'space-above'}>
+                    <h3 className={menu.style['schedule-title'] + ' center'}>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Schedule</h3>
+                    { today.getDay() == 0 || today.getDay() == 6 ?
+                      <div className="title2">
+                        <b>Saturday, Sunday & Holidays</b>
+                        <p>Brunch 10:00 a.m. - 2:30 p.m.</p>
                         <p>Dinner 4:00-7:30 p.m.</p>
+                      </div> :
+                      <div className="title2">
+                          <b>Monday – Friday</b>
+                          <p>Breakfast 7:30 a.m. - 10:30 a.m.</p>
+                          <p>(Light Breakfast from 10:30 a.m. - 11:00 a.m.)</p>
+                          <p>Lunch 11:00 a.m. - 3:30 p.m.</p>
+                          <p>Dinner 4:00-7:30 p.m.</p>
+                      </div>
+                    }
+                  </div> :
+                  <div id='schedule' className={'space-above'}>
+                  <h3 className={menu.style['schedule-title'] + ' center'}>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Schedule</h3>
+                  { today.getDay() == 0 || today.getDay() == 6 ?
+                    <div className="title2">
+                      <b>Saturday, Sunday & Holidays</b>
+                      <p>Closed</p>
+                    </div> :
+                    today.getDay() == 5 ?
+                    <div className="title2">
+                      <b>Friday</b>
+                      <p>11:00 a.m. - 3:30 p.m.</p>
+                    </div> :
+                    <div className="title2">
+                      <b>Monday – Thursday</b>
+                      <p>11:00 a.m. - 7:00 p.m.</p>
                     </div>
                   }
-                </div>
-                <div className='row-container'>
-              <button onClick={() => {window.scrollTo(0,document.body.scrollHeight + 500); this.setState({menu: menu.name == 'burwash' ? {name: 'ned', index: 1, style: style2, colour: '#58ad60'} : {name: 'burwash', index: 0, style: style1, colour: '#A30031'} })}} className={menu.style['swap']}>
-                <p>{menu.name == 'ned' ? 'Burwash Menu' : 'Ned\'s Menu'}</p>
-              </button>
-            </div>
+                  </div>
+                }
+                {/* <div className='row-container space-above'>
+                  <button onClick={() => {window.scrollTo(0,document.body.scrollHeight + 500); this.setState({menu: menu.name == 'burwash' ? {name: 'ned', index: 1, style: style2, colour: '#58ad60'} : {name: 'burwash', index: 0, style: style1, colour: '#A30031'} })}} className={menu.style['swap']}>
+                    <p>{menu.name == 'ned' ? 'Burwash Menu' : 'Ned\'s Menu'}</p>
+                  </button>
+                </div> */}
               </div>
             }
           </div>
@@ -239,7 +260,7 @@ class Home extends Component {
           }
           
           .space-above {
-            padding-top: 45px;
+            padding-top: 35px;
           }
           
           .space-below {
