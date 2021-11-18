@@ -1,12 +1,17 @@
 import Head from 'next/head'
 import React, { Component } from 'react';
-import week1 from '../data/week1.json';
-import week2 from '../data/week2.json';
-import week3 from '../data/week3.json';
-import week4 from '../data/week4.json';
+import week1 from '../data/burwash/week1.json';
+import week2 from '../data/burwash/week2.json';
+import week3 from '../data/burwash/week3.json';
+import week4 from '../data/burwash/week4.json';
+import ned1 from '../data/ned/week1.json';
+import ned2 from '../data/ned/week2.json';
+import ned3 from '../data/ned/week3.json';
+import ned4 from '../data/ned/week4.json';
 
-const weeks = [week1, week2, week3, week4];
+const weeks = [[week1, ned1], [week2, ned2], [week3, ned3], [week4, ned4]];
 const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const colour = '#A30031'
 
 class Home extends Component {
 
@@ -14,17 +19,12 @@ class Home extends Component {
     super(props);
     this.state = {
       date: new Date(),
+      menu: 0
     };
   }
 
   formatDay = (num) => {
-    if (num == 1) {
-      return ""
-    } else if (num == 0) {
-      return "__6"
-    } else {
-      return "__" + String(num - 1) 
-    }
+    return String(num)
   }
 
   changeDate = (direction) => {
@@ -82,7 +82,7 @@ class Home extends Component {
               <h2>Lunch and Dinner menu has swapped for today! (Dinner: Indian Butter Chicken)</h2>
             </div>
           </div> */}
-          <div className='nav-bar'>
+          <div className={this.state.menu == 1 ? 'nav-bar green' : 'nav-bar'}>
             <a href="." >
               <img src="/crest-outlined.png" alt="Vic Crest" className="logo-top" />
             </a>
@@ -91,14 +91,19 @@ class Home extends Component {
             <h1 className='title'>Burwash Menu</h1>
             <h2 className='title2'>Week {this.getWeek()}</h2>
             <div className='row-container'>
+              <button onClick={() => this.setState({menu: this.state.menu == 0 ? 1 : 0 })} className={'arrow'}>
+                <p>{this.state.menu == 1 ? 'Burwash Menu' : 'Ned\'s Menu'}</p>
+              </button>
+            </div>
+            <div className='row-container'>
               <button onClick={() => this.changeDate('backward')} className='arrow'>
-                <img src="/arrow.svg" alt="Left Arrow" className="left-arrow" />
+                <img src="/arrow.svg" alt="Left Arrow" className={this.state.menu == 1 ? 'left-arrow green' : 'left-arrow'} />
               </button>
               <h2 className={today.getDate() == new Date().getDate() && today.getMonth() == new Date().getMonth() ? 'subtitle' : 'subtitle other-day' }>
                 {today.toDateString().replace('2021', '').replace('2022', '')}
               </h2>
               <button onClick={() => this.changeDate('forward')} className='arrow'>
-                <img src="/arrow.svg" alt="Right Arrow" className="right-arrow" />
+                <img src="/arrow.svg" alt="Right Arrow" className={this.state.menu == 1 ? 'right-arrow green' : 'right-arrow'} />
               </button>
             </div>
             {/* <div className='row-container'>
@@ -117,7 +122,7 @@ class Home extends Component {
                   </div>
                 }
                 <table className='mainTable'>
-                { weeks[this.getWeek() - 1].map((col, index) => 
+                { weeks[this.getWeek() - 1][this.state.menu].map((col, index) => 
                   ((col[this.formatDay(today.getDay())] != "" && col['Victoria University Food Services Burwash Dining Hall']) != "" || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER") ?
                       ((col['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek()) || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ) ? 
                       <tr>
@@ -306,13 +311,17 @@ class Home extends Component {
             width: 70%;
           }
 
+          .green {
+            background-color: #58ad60
+          }
+
 
           .row-container {
             justify-content: center;
             text-align: center;
             display: flex;
             flex-direction: row;
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
           }
 
           .arrow {
