@@ -98,7 +98,7 @@ class Home extends Component {
                 <p>{menu.name == 'ned' ? 'Burwash Menu' : 'Ned\'s Menu'}</p>
               </button>
             </div>
-            {/* { menu.name == 'burwash' && <img src="/new.svg" alt="NEW" className={'new-ribbon'} />} */}
+            { menu.name == 'burwash' && <img src="/NEW.svg" alt="NEW" className={'new-ribbon'} />}
             <div className='row-container'>
               <button onClick={() => this.changeDate('backward')} className={menu.style['arrow']}>
                 <img src="/arrow.svg" alt="Left Arrow" className={'left-arrow'} />
