@@ -150,7 +150,7 @@ class Home extends Component {
                 { menu.name == 'ned' && !(days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday') &&
                   <tr>
                     <td className='heading'>EVERYDAY</td>
-                    <td className='table-newline'>Sandwiches / Salads / Snacks / Beverages</td>
+                    <td className='table-newline'>Sandwiches / Salads / Snacks / Desserts / Beverages</td>
                   </tr>
                 }
                 </table>
@@ -252,11 +252,11 @@ class Home extends Component {
           .new-ribbon {
             position: absolute;
             width: 50px;
-            left: 142px; 
+            left: 143px; 
             right: 0; 
             margin-left: auto; 
             margin-right: auto;
-            top: 222px;
+            top: 225px;
             transform: rotate(25deg);
           }
           
