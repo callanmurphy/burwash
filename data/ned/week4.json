@@ -1,46 +1,16 @@
 [
   {
-    "WEEK 1": "ALL DAY",
-    "1": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "2": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "3": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "4": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "5": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "6": "",
-    "0": ""
+    "title": "DAYS",
+    "1": "MONDAY",
+    "2": "TUESDAY",
+    "3": "WEDNESDAY",
+    "4": "THURSDAY",
+    "5": "FRIDAY",
+    "6": "SATURDAY",
+    "0": "SUNDAY"
   },
   {
-    "WEEK 4": "SOUPS",
-    "1": "Moroccan Brown Lentil\n(GF)(VGN)\n\nCream of Roasted Squash\n(GF)(VGN)",
-    "2": "Braised Leek & Potato\n(GF)(VGN)\n\nHearty Minestrone\n(GF)(VGN)",
-    "3": "Black eye peas and Kale\n(GF)(VGN)\n\nSicilian Chicken\n(H)",
-    "4": "Garden Vegetable\n(GF)(VGN\n\nBeef Miso Udon Noodle\n(H)",
-    "5": "Seafood Chowder\n(H)(GF)\n\nChickpea Vegetable Mulligatawny\n(GF)(VGN)",
-    "6": "",
-    "0": ""
-  },
-  {
-    "WEEK 1": "DELI SANDWICHES EVERYDAY",
-    "1": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "2": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "3": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "4": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "5": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "6": "",
-    "0": ""
-  },
-  {
-    "WEEK 1": "EVERYDAY\nSALADS",
-    "1": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "2": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "3": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "4": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "5": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "6": "",
-    "0": ""
-  },
-  {
-    "WEEK 4": "MEAT ENTREE",
+    "title": "MEAT ENTREE",
     "1": "Meatballs in Marinara Sauce \n(H)(DF)",
     "2": "",
     "3": "Grilled Chicken Breast Sandwich with toppings\n(H)(DF)",
@@ -50,7 +20,7 @@
     "0": ""
   },
   {
-    "WEEK 4": "VEGETABLE ENTREE",
+    "title": "VEGETABLE ENTREE",
     "1": "Vegan Meatballs in Marinara Sauce \n(VGN)",
     "2": "Spinach and Cheese Cannelloni \n (VEG)",
     "3": "Malibu Patty Sandwich \nwith toppings\n(VEG)",
@@ -60,12 +30,22 @@
     "0": ""
   },
   {
-    "WEEK 4": "SIDES",
+    "title": "SIDES",
     "1": "Spaghetti Pasta \n(VGN)\n\nChunky Roasted Vegetables \n(VGN)(GF)\n\nGarlic Aioli Flat Bread\n(VGN)\n\nParmesan Cheese\n(ON SIDE)",
     "2": "Marinara Sauce \n(GF)(VGN)\nGarlic Bread \n(VEG)\nRoasted Mushrooms and Sautéed Swiss Chard \n(GF)(VGN)\n\nParmesan Cheese\n(ON SIDE)",
     "3": "Home Fries \n(VGN)(GF)\n\nCreamy Kale Crunch Salad \n(VEG)\n\nTOPPINGS: \nTomato, Lettuce, Onion, Pickles, Peppers",
     "4": "Vegetable Fried Rice \n(VGN)(GF)\n\nSpring Rolls \n(VGN)\n\nSautéed Asian Green\n(VGN)(GF)",
     "5": "Lemon Rice \n(GF)(VGN)\n\nSteamed Green \n(VGN)\n\nSpanakopita \n(VEG)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SOUPS",
+    "1": "Moroccan Brown Lentil (GF)(VGN)\nCream of Roasted Squash (GF)(VGN)",
+    "2": "Braised Leek & Potato (GF)(VGN)\nHearty Minestrone (GF)(VGN)",
+    "3": "Black eye peas and Kale (GF)(VGN)\nSicilian Chicken (H)",
+    "4": "Garden Vegetable (GF)(VGN)\nBeef Miso Udon Noodle (H)",
+    "5": "Seafood Chowder (H)(GF)\nChickpea Vegetable Mulligatawny (GF)(VGN)",
     "6": "",
     "0": ""
   }

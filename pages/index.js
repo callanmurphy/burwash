@@ -98,6 +98,7 @@ class Home extends Component {
                 <p>{menu.name == 'ned' ? 'Burwash Menu' : 'Ned\'s Menu'}</p>
               </button>
             </div>
+            { menu.name == 'burwash' && <img src="/new.svg" alt="NEW" className={'new-ribbon'} />}
             <div className='row-container'>
               <button onClick={() => this.changeDate('backward')} className={menu.style['arrow']}>
                 <img src="/arrow.svg" alt="Left Arrow" className={'left-arrow'} />
@@ -124,22 +125,33 @@ class Home extends Component {
                     <b>Dinner Only (first meal of 2022)</b>
                   </div>
                 }
+                {/* 
+                "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts" 
+                "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese"
+                "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein"
+                */}
                 <table className={'mainTable ' + menu.style['mainTable']}>
-                { weeks[this.getWeek() - 1][menu.index].map((col, index) => 
-                  ((col[this.formatDay(today.getDay())] != "" && col['Victoria University Food Services Burwash Dining Hall']) != "" || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER") ?
-                      ((col['Victoria University Food Services Burwash Dining Hall'] == "WEEK " + this.getWeek()) || col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ) ? 
+                { weeks[this.getWeek() - 1][menu.index].map((col, index) => !(menu.name == 'ned' && (days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday')) &&
+                  ((col[this.formatDay(today.getDay())] != "" && col['title']) != "" || col['title'] == "DINNER") ?
+                      ( col['title'] == "DAYS" || col['title'] == "DINNER" ) ? 
                       <tr>
-                        <th className='heading'>{col['Victoria University Food Services Burwash Dining Hall'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
+                        <th className='heading'>{col['title'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
                         <th className='heading table-newline'>{days[today.getDay()]}</th>
                       </tr>
                       :
                       <tr>
-                        <td className='heading'>{col['Victoria University Food Services Burwash Dining Hall']}</td>
+                        <td className='heading'>{col['title']}</td>
                         <td className='table-newline'>{col[this.formatDay(today.getDay())]}</td>
                       </tr>
                       :
                       null
                     )
+                }
+                { menu.name == 'ned' && !(days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday') &&
+                  <tr>
+                    <td className='heading'>EVERYDAY</td>
+                    <td className='table-newline'>Sandwiches / Salads / Snacks / Beverages</td>
+                  </tr>
                 }
                 </table>
                 { menu.name == 'burwash' ?
@@ -235,6 +247,17 @@ class Home extends Component {
           
           .alert-bar h2 {
             font-size: 16px;
+          }
+
+          .new-ribbon {
+            position: absolute;
+            width: 50px;
+            left: 142px; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto;
+            top: 222px;
+            transform: rotate(25deg);
           }
           
           main {

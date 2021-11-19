@@ -1,46 +1,16 @@
 [
   {
-    "WEEK 1": "ALL DAY",
-    "1": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "2": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "3": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "4": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "5": "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts",
-    "6": "",
-    "0": ""
+    "title": "DAYS",
+    "1": "MONDAY",
+    "2": "TUESDAY",
+    "3": "WEDNESDAY",
+    "4": "THURSDAY",
+    "5": "FRIDAY",
+    "6": "SATURDAY",
+    "0": "SUNDAY"
   },
   {
-    "WEEK 3": "SOUPS",
-    "1": "Miso, Tofu, Nori, Mushrooms, Bean Sprouts, Green Onions\n(GF)(VGN)\n\nSeafood Creole (H)(GF)(DF)",
-    "2": "Lentil & Roasted Red Pepper\n(GF)(VGN)\n\nBeef and Winter Vegetable\n(H)(GF)(DF)",
-    "3": "Spicy Black Bean Soup\n(GF)(VGN)\n\nTom Yum Chicken\n(H)(DF)",
-    "4": "Gingered Carrot\n(GF)(VGN)\n\nSmoky Mushroom (VEG)(GF)\n(BACON ON SIDE)",
-    "5": "Butternut Squash\n(GF)(VGN)\n\nSplit Pea and Vegetable\n(GF)(VGN)",
-    "6": "",
-    "0": ""
-  },
-  {
-    "WEEK 1": "DELI SANDWICHES EVERYDAY",
-    "1": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "2": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "3": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "4": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "5": "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese",
-    "6": "",
-    "0": ""
-  },
-  {
-    "WEEK 1": "EVERYDAY\nSALADS",
-    "1": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "2": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "3": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "4": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "5": "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein",
-    "6": "",
-    "0": ""
-  },
-  {
-    "WEEK 3": "MEAT ENTREE",
+    "title": "MEAT ENTREE",
     "1": "Beef Lasagna",
     "2": "Butter Chicken \n (H)",
     "3": "Debrazzini Sausage on a bun",
@@ -50,7 +20,7 @@
     "0": ""
   },
   {
-    "WEEK 3": "VEGETABLE ENTREE",
+    "title": "VEGETABLE ENTREE",
     "1": "Vegetable Lasagna",
     "2": "Chickpea and Cauliflower Curry Stew \n(VGN)(GF)",
     "3": "Vegetable Weiner on a bun\n(VEG)",
@@ -60,12 +30,22 @@
     "0": ""
   },
   {
-    "WEEK 3": "SIDES",
+    "title": "SIDES",
     "1": "Garlic Bread \n(VEG)\n\nBalsamic Glazed Zucchini\n(VGN)(GF)\n\nMarinara Sauce \n(GF)(VGN)",
     "2": "Basmati Rice \n(VGN)(GF)\n\nSteamed Green Vegetable Blend \n(VGN)(GF)\n\nVegetable Mini Samosas \n(VGN)(GF)",
-    "3": "($6 offer) Mac & Cheese with Bacon or \nRoasted Veg topping and extra Cheese sauce\n(VEG)  \n\nVegetable Medley\n(VEG)\n\nToppings: onion, tomato, pickles, mustard, ketchup.",
+    "3": "Mac & Cheese with Bacon or \nRoasted Veg topping and extra Cheese sauce\n(VEG)  \n\nVegetable Medley\n(VEG)\n\nToppings: onion, tomato, pickles, mustard, ketchup.",
     "4": "Soup OR Side Salad Combo",
     "5": "French Potato Salad\n(VGN) (GF)\n\nCorn on a Cob\n(VGN) (GF) (DF)\n\nToppings: Lettuce, cheese onion, tomato, pickles, mustard, ketchup.",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SOUPS",
+    "1": "Miso, Tofu, Nori, Mushrooms, Bean Sprouts, Green Onions (GF)(VGN)\nSeafood Creole (H)(GF)(DF)",
+    "2": "Lentil & Roasted Red Pepper (GF)(VGN)\nBeef and Winter Vegetable (H)(GF)(DF)",
+    "3": "Spicy Black Bean Soup (GF)(VGN)\nTom Yum Chicken (H)(DF)",
+    "4": "Gingered Carrot (GF)(VGN)\nSmoky Mushroom (VEG)(GF) (BACON ON SIDE)",
+    "5": "Butternut Squash (GF)(VGN)\nSplit Pea and Vegetable (GF)(VGN)",
     "6": "",
     "0": ""
   }
