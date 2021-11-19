@@ -1,0 +1,392 @@
+[
+  {
+    "title": "DAYS",
+    "1": "MONDAY",
+    "2": "TUESDAY",
+    "3": "WEDNESDAY",
+    "4": "THURSDAY",
+    "5": "FRIDAY",
+    "6": "SATURDAY",
+    "0": "SUNDAY"
+  },
+  {
+    "title": "ALL-DAY",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SOUPS",
+    "1": "Miso, Tofu, Nori, Mushrooms, Bean Sprouts, Green Onions (GF)(VGN)\nSeafood Creole (H)(GF)(DF)",
+    "2": "Lentil & Roasted Red Pepper (GF)(VGN)\nBeef and Winter Vegetable (H)(GF)(DF)",
+    "3": "Spicy Black Bean Soup (GF)(VGN)\nTom Yum Chicken (H)(DF)",
+    "4": "Gingered Carrot (GF)(VGN)\nSmoky Mushroom (VEG)(GF) (BACON ON SIDE)",
+    "5": "Butternut Squash (GF)(VGN)\nSplit Pea and Vegetable (GF)(VGN)",
+    "6": "Braised Leek & Rice (GF)(VGN)\nSpicy Beef Vegetable (H)(GF)(DF)",
+    "0": "Curried Zucchini (GF)(VGN)\nCaribbean Chicken & Coconut (H)(GF)(DF)"
+  },
+  {
+    "title": "MEAT PIZZA",
+    "1": "",
+    "2": "Chicken Alfredo Pizza (H)",
+    "3": "",
+    "4": "Hawaiian - Ham & Pineapple",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "Pepperoni Pizza",
+    "0": "Pepperoni, Bacon, Green\nPepper"
+  },
+  {
+    "title": "VEGETARIAN PIZZA",
+    "1": "",
+    "2": "Quattro Fromaggio Mozzarella, Parmesan, Cheddar,\nFeta (VEG)",
+    "3": "",
+    "4": "Pineapple, Green olives and Banana Pepper rings\n(VEG)",
+    "5": "",
+    "6": "Pizza – Dinner Only  Cheesy Garlic Pizza Mozzarella, Garlic, Oregano (VEG)",
+    "0": "Pizza – Dinner Only Margherita Pizza Mozzarella, Basil, Tomato Sauce (VEG)"
+  },
+  {
+    "title": "MEAT HOT SANDWICH",
+    "1": "Italian Chicken Tenders on a\nPanini (H)",
+    "2": "",
+    "3": "Roast Beef, Cheddar and Horseradish on Marbled Rye",
+    "4": "",
+    "5": "BBQ Chicken Enchilada\n(SALSA & SOUR CREAM ON SIDE)",
+    "6": "BREAKFAST FOR BRUNCH",
+    "0": "BREAKFAST FOR BRUNCH"
+  },
+  {
+    "title": "VEGETARIAN HOT SANDWICH",
+    "1": "Mushroom & Roasted Tomato, Garlic Aioli on Hoagie (VEG)",
+    "2": "",
+    "3": "Grilled Cheese and Caramelized Onion (VEG)",
+    "4": "",
+    "5": "Spicy Bean & Cheese Enchilada\n(SALSA & SOUR CREAM ON SIDE)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "COLD MEAT SANDWICH",
+    "1": "Roast Turkey and Cheddar Cheese on a Hoagie Bun",
+    "2": "Roast Turkey and Cheddar Cheese on a Hoagie Bun",
+    "3": "Roast Turkey and Cheddar Cheese on a Hoagie Bun",
+    "4": "Roast Turkey and Cheddar Cheese on a Hoagie Bun",
+    "5": "Roast Turkey and Cheddar Cheese on a Hoagie Bun",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "COLD VEGETARIAN SANDWICH",
+    "1": "Roasted Red Pepper Hummus & Vegetable Wrap\n(VGN)",
+    "2": "Balsamic Roasted Vegetable Feta Cheese on a Ciabatta (VEG)",
+    "3": "Green Goddess Sandwich on an Onion Bun\n(VEG)",
+    "4": "Caprese (Bocconcini, Basil,\nTomato) on a Kaiser (VEG)",
+    "5": "Roasted Root Vegetable with Avocado and Arugula on a Baguette\n(VGN)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "ROTATIONAL\nSANDWICH",
+    "1": "Classic Egg Salad on a Wrap",
+    "2": "Deluxe Ham and Provolone\nCheese on a Ciabatta",
+    "3": "Roast Beef with Swiss Cheese\non an Onion Bun",
+    "4": "Tuna Salad on a Kaiser",
+    "5": "Tuscan Grilled Chicken with\nMozzarella on a Baguette",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "ROTATIONAL COMPOSED\nSALAD",
+    "1": "Ratatouille Pasta Salad (VGN)",
+    "2": "Ratatouille Pasta Salad (VGN)",
+    "3": "Asian Kale Salad (GF)(VGN)",
+    "4": "Asian Kale Salad (GF)(VGN)",
+    "5": "Black-eyed Peas Salad (GF)(VGN)",
+    "6": "Black-eyed Peas Salad (GF)(VGN)",
+    "0": "Chef’s Choice Salad (VEG)"
+  },
+  {
+    "title": "MEAT FEATURED SALAD",
+    "1": "Brazilian Chicken Bowl Chicken Breast, Saffron Rice Black Beans, Corn, Mixed Green Lettuce, Tomato, Cucumber, Red Onion",
+    "2": "Spicy BBQ Beef Strips Bowl BBQ Beef Strips, Brown Rice, Mixed Greens, Tomato, Cucumber, Black Beans, Carrots, Red Onion, Corn",
+    "3": "Oodles Noodles Bowl Maple Glazed Salmon, Cellophane Noodles\nCarrots, Baby Corn, Red Pepper, Green Onion, Edamame, Daikon, Bamboo Shoots",
+    "4": "Winter Chicken Bowl Applewood Grilled Chicken Baby Kale Arugula Blend, Beets,\nCorn, Black Beans, Sweet Potato Tidbits",
+    "5": "Lime Glazed Shrimp Vietnamese Noodle Bowl Lime Glazed Shrimp, Napa Cabbage, Lettuce, Edamame, Basil, Mint, Bean Sprouts,\nCucumbers, Bell Peppers, Snow Peas, Carrots",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "VEGETARIAN FEATURED SALAD",
+    "1": "Brazilian Tofu Bowl\nGrilled Tofu, Saffron Rice Black Beans, Corn, Mixed Green Lettuce, Tomato, Cucumber, Red Onion",
+    "2": "Spicy BBQ Jackfruit Bowl BBQ Jackfruit, Brown Rice, Mixed Greens, Tomato, Cucumber, Black Beans, Carrots, Red Onion, Corn",
+    "3": "Oodles Noodles Bowl\nMaple Glazed Tofu,  Cellophane Noodles\nCarrots, Baby Corn, Red Pepper, Green Onion, Edamame, Daikon, Bamboo Shoots",
+    "4": "Winter Tempeh Salad Bowl\nMarinated Tempeh\nBaby Kale Arugula Blend, Beets, Corn, Black Beans, Sweet Potato Tidbits",
+    "5": "Vietnamese Noodle Bowl Lime Glazed Tofu, Napa Cabbage, Lettuce, Edamame, Basil, Mint, Bean Sprouts,\nCucumbers, Bell Peppers, Snow Peas, Carrots",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "FEATURED SALAD SIDES",
+    "1": "Chimichurri Dressing\nSides: Guacamole,  Chimichurri Sauce, Salsa",
+    "2": "Sweet Tangy BBQ Dressing\nSides: Assorted Seeds",
+    "3": "Asian Sesame Dressing\nSides: Sesame Seeds",
+    "4": "Honey Lemon Dressing\nSides: Goat Cheese",
+    "5": "Pineapple Tajin Dressing\nSides: Crispy Chow Mein",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "DESSERT",
+    "1": "Warm Apple Pie",
+    "2": "Zucchini Chocolate Cake",
+    "3": "Sticky Toffee Pudding",
+    "4": "Tres Leches Cake",
+    "5": "Oreo Cheesecake",
+    "6": "Rice Krispy Square",
+    "0": "Mini Cupcakes"
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "title",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "WEEK 3",
+    "1": "MONDAY",
+    "2": "TUESDAY",
+    "3": "WEDNESDAY",
+    "4": "THURSDAY",
+    "5": "FRIDAY",
+    "6": "SATURDAY",
+    "0": "SUNDAY"
+  },
+  {
+    "title": "LUNCH",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "COMBO 1 - MEAT",
+    "1": "Crockpot BBQ Chicken Breast\n(H)(GF)(DF)",
+    "2": "Meatballs in Marinara\n(H)(DF)",
+    "3": "Chicken Schnitzel",
+    "4": "Korean BBQ Pulled Pork\n(GF)(DF)",
+    "5": "Battered Haddock\n(H)",
+    "6": "Brunch Entree Lemongrass Chicken (H)(GF)(DF)",
+    "0": "Brunch Entree  Pasta and Red Lentil Pasta\n(GF)(VGN)"
+  },
+  {
+    "title": "COMBO 1 –\nVEGETARIAN",
+    "1": "Vegan Cabbage Roll Casserole\n(GF)(VGN)",
+    "2": "Vegan Meatballs in Marinara\n(VGN)",
+    "3": "Faux Chicken Nuggets\n(VGN)",
+    "4": "Korean BBQ Jackfruit\n(GF)(DF)",
+    "5": "Grilled Pesto Tofu Steak\n(GF)(VGN)",
+    "6": "Lemongrass Tofu\n(GF)(VGN)\nSautéed Garlic Broccoli\n(GF)(VGN)\nJasmine Rice\n(GF)(VGN)\nChef’s Choice Appetizer\n(GF)(VGN)",
+    "0": "Bolognese\n(H)(DF)\nVegan Bolognese\n(VGN)\nRoasted Vegetables\n(GF)(VGN)\nGarlic Bread\n(VEG)\nParmesan Cheese\n(VEG)"
+  },
+  {
+    "title": "SIDES",
+    "1": "Roasted Red Skin Potatoes\n(GF)(VGN)\nBreaded Pickle Spears\n(VEG)\nSeasonal Vegetables\n(GF)(VGN)",
+    "2": "Hoagie Bun/GF Bun\nSautéed Mushrooms and Onions\n(GF)(VGN)\nSteak Cut French Fries\n(GF)(VGN)",
+    "3": "Warm Potato Salad\n(GF)(VGN)\nRoasted Zucchini and Red Bell Peppers in Stewed Tomatoes\n(GF)(VGN)",
+    "4": "Bao Buns (3PCS)\n(VEG)\nVegetable Fried Rice\n(GF)(VGN)\nSautéed Garlic Bok Choy\n(GF)(VGN)",
+    "5": "Shoestring Fries\n(GF)(VGN)\nSeasonal Vegetable\n(GF)(VGN)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "PORTION TOPPINGS",
+    "1": "",
+    "2": "Vinaigrette Coleslaw\n(GF)(VGN)",
+    "3": "Dijon Vegan Mayo\n(GF)(VGN)",
+    "4": "",
+    "5": "Asian Kale Slaw\n(GF)(VGN)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "Shredded Cheddar and Mozzarella Cheese",
+    "3": "",
+    "4": "",
+    "5": "Tartar Sauce",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "DINNER",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "COMBO 1 - MEAT",
+    "1": "Char Sui Pork Loin\n(GF)(DF)",
+    "2": "Seafood Carbonara with Linguine\n(H)",
+    "3": "Moroccan Beef Tagine\n(H)(GF)(DF)",
+    "4": "Dry Rub Chicken Wings\n(H)(GF)(DF)",
+    "5": "Chicken Vindaloo\n(H)(GF)(DF)",
+    "6": "Sesame Beef and Vegetable Stirfry\n(H)(GF)(DF)",
+    "0": "Herbed Rotisserie Chicken\n(H)(GF)(DF)\nChalet Gravy\n(GF)(H)"
+  },
+  {
+    "title": "COMBO 1 –",
+    "1": "Grilled Tofu Steaks in Hot",
+    "2": "Caponata Pasta with",
+    "3": "Moroccan Chickpea and",
+    "4": "Beyond Burger and Buns",
+    "5": "Vegetable Vindaloo with",
+    "6": "Sesame Tofu and Vegetable",
+    "0": "Spicy Potato, Spinach and"
+  },
+  {
+    "title": "VEGETARIAN",
+    "1": "Szechwan Sauce",
+    "2": "Mediterranean Vegetables",
+    "3": "Vegetable Tagine",
+    "4": "(GF)(VGN)",
+    "5": "Chickpea and Vegetables",
+    "6": "Stirfry",
+    "0": "Paneer Curry"
+  },
+  {
+    "title": "",
+    "1": "(GF)(VGN)",
+    "2": "and Romano Beans",
+    "3": "(GF)(VGN)",
+    "4": "",
+    "5": "(GF)(VGN)(DF)",
+    "6": "(GF)(VGN)",
+    "0": "(VEG) (GF)"
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "(VEG)",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SIDES",
+    "1": "Chow Mein Noodles with Bean Sprouts\n(VEG)\nSautéed Vegetable Medley\n(GF)(VGN)\nVegetable Spring Rolls (2PCS)\n(VEG)",
+    "2": "Garlic Cheese Bread\n(GF)(VGN)\nRoasted Acorn Squash Slices\n(GF)(VGN)",
+    "3": "Saffron Rice\n(VGN)\nCorn on the Cob\n(GF)(VGN)\nVegetable Samosa\n(VGN)",
+    "4": "Roasted Zucchini and Carrots with Garlic and Herbs\n(GF)(VGN)\nMac and Cheese\n(VEG)",
+    "5": "Broccoli and Carrots\n(GF)(VGN)\nCardamom Basmati Rice\n(GF)(VGN)\nNaan\n(VEG)",
+    "6": "Sticky Rice\n(GF)(VGN)\nVegetable Egg Rolls (1PC)\n(VGN)\nSteamed Chinese Broccoli\n(GF)(VGN)",
+    "0": "Wild Rice Pilaf\n(GF)(VGN)\nSteamed Vegetables\n(GF)(VGN)"
+  },
+  {
+    "title": "PORTION TOPPINGS",
+    "1": "",
+    "2": "Parmesan Cheese\n(VEG)",
+    "3": "",
+    "4": "Sauces: BBQ, Hot Sauce, Honey Garlic Sauce",
+    "5": "Cucumber Raita\n(GF)(VEG)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "Burger Topping: Tomato, Lettuce, Onion, Cheese",
+    "5": "",
+    "6": "",
+    "0": ""
+  }
+]

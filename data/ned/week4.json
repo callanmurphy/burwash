@@ -1,0 +1,52 @@
+[
+  {
+    "title": "DAYS",
+    "1": "MONDAY",
+    "2": "TUESDAY",
+    "3": "WEDNESDAY",
+    "4": "THURSDAY",
+    "5": "FRIDAY",
+    "6": "SATURDAY",
+    "0": "SUNDAY"
+  },
+  {
+    "title": "MEAT ENTREE",
+    "1": "Meatballs in Marinara Sauce \n(H)(DF)",
+    "2": "",
+    "3": "Grilled Chicken Breast Sandwich with toppings\n(H)(DF)",
+    "4": "Ginger Teriyaki Beef \n(H)(GF)(DF)",
+    "5": "Creamy Peppercorn Chicken Breast\n(H)(GF)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "VEGETABLE ENTREE",
+    "1": "Vegan Meatballs in Marinara Sauce \n(VGN)",
+    "2": "Spinach and Cheese Cannelloni \n (VEG)",
+    "3": "Malibu Patty Sandwich \nwith toppings\n(VEG)",
+    "4": "Ginger Teriyaki Tofu \n(VGN)(GF)",
+    "5": "Bean and Vegetable Ratatouille \n(VGN)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SIDES",
+    "1": "Spaghetti Pasta \n(VGN)\n\nChunky Roasted Vegetables \n(VGN)(GF)\n\nGarlic Aioli Flat Bread\n(VGN)\n\nParmesan Cheese\n(ON SIDE)",
+    "2": "Marinara Sauce \n(GF)(VGN)\nGarlic Bread \n(VEG)\nRoasted Mushrooms and Sautéed Swiss Chard \n(GF)(VGN)\n\nParmesan Cheese\n(ON SIDE)",
+    "3": "Home Fries \n(VGN)(GF)\n\nCreamy Kale Crunch Salad \n(VEG)\n\nTOPPINGS: \nTomato, Lettuce, Onion, Pickles, Peppers",
+    "4": "Vegetable Fried Rice \n(VGN)(GF)\n\nSpring Rolls \n(VGN)\n\nSautéed Asian Green\n(VGN)(GF)",
+    "5": "Lemon Rice \n(GF)(VGN)\n\nSteamed Green \n(VGN)\n\nSpanakopita \n(VEG)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SOUPS",
+    "1": "Moroccan Brown Lentil (GF)(VGN)\nCream of Roasted Squash (GF)(VGN)",
+    "2": "Braised Leek & Potato (GF)(VGN)\nHearty Minestrone (GF)(VGN)",
+    "3": "Black eye peas and Kale (GF)(VGN)\nSicilian Chicken (H)",
+    "4": "Garden Vegetable (GF)(VGN)\nBeef Miso Udon Noodle (H)",
+    "5": "Seafood Chowder (H)(GF)\nChickpea Vegetable Mulligatawny (GF)(VGN)",
+    "6": "",
+    "0": ""
+  }
+]

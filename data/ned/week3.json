@@ -1,0 +1,52 @@
+[
+  {
+    "title": "DAYS",
+    "1": "MONDAY",
+    "2": "TUESDAY",
+    "3": "WEDNESDAY",
+    "4": "THURSDAY",
+    "5": "FRIDAY",
+    "6": "SATURDAY",
+    "0": "SUNDAY"
+  },
+  {
+    "title": "MEAT ENTREE",
+    "1": "Beef Lasagna",
+    "2": "Butter Chicken \n (H)",
+    "3": "Debrazzini Sausage on a bun",
+    "4": "BBQ Chicken Pizza\n(H)",
+    "5": "Beef Burger with Bun\n(H) (DF)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "VEGETABLE ENTREE",
+    "1": "Vegetable Lasagna",
+    "2": "Chickpea and Cauliflower Curry Stew \n(VGN)(GF)",
+    "3": "Vegetable Weiner on a bun\n(VEG)",
+    "4": "Cheesy Garlic Pizza\n(VEG)",
+    "5": "Beyond Meat Burger with Bun\n(VGN)(GF)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SIDES",
+    "1": "Garlic Bread \n(VEG)\n\nBalsamic Glazed Zucchini\n(VGN)(GF)\n\nMarinara Sauce \n(GF)(VGN)",
+    "2": "Basmati Rice \n(VGN)(GF)\n\nSteamed Green Vegetable Blend \n(VGN)(GF)\n\nVegetable Mini Samosas \n(VGN)(GF)",
+    "3": "Mac & Cheese with Bacon or \nRoasted Veg topping and extra Cheese sauce\n(VEG)  \n\nVegetable Medley\n(VEG)\n\nToppings: onion, tomato, pickles, mustard, ketchup.",
+    "4": "Soup OR Side Salad Combo",
+    "5": "French Potato Salad\n(VGN) (GF)\n\nCorn on a Cob\n(VGN) (GF) (DF)\n\nToppings: Lettuce, cheese onion, tomato, pickles, mustard, ketchup.",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SOUPS",
+    "1": "Miso, Tofu, Nori, Mushrooms, Bean Sprouts, Green Onions (GF)(VGN)\nSeafood Creole (H)(GF)(DF)",
+    "2": "Lentil & Roasted Red Pepper (GF)(VGN)\nBeef and Winter Vegetable (H)(GF)(DF)",
+    "3": "Spicy Black Bean Soup (GF)(VGN)\nTom Yum Chicken (H)(DF)",
+    "4": "Gingered Carrot (GF)(VGN)\nSmoky Mushroom (VEG)(GF) (BACON ON SIDE)",
+    "5": "Butternut Squash (GF)(VGN)\nSplit Pea and Vegetable (GF)(VGN)",
+    "6": "",
+    "0": ""
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "title": "DAYS",
+    "1": "MONDAY",
+    "2": "TUESDAY",
+    "3": "WEDNESDAY",
+    "4": "THURSDAY",
+    "5": "FRIDAY",
+    "6": "SATURDAY",
+    "0": "SUNDAY"
+  },
+  {
+    "title": "MEAT ENTREE",
+    "1": "Meatballs in Marinara Sauce \n(H)(DF)",
+    "2": "Creamy Peppercorn Chicken Breast \n(H)(GF)",
+    "3": "",
+    "4": "Ginger Teriyaki Beef \n(H)(GF)(DF)",
+    "5": "Grilled Chicken Breast Sandwich \n(H)(DF)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "VEGETABLE ENTREE",
+    "1": "Vegan Meatballs in Marinara Sauce \n(VGN)",
+    "2": "Bean and Vegetable Ratatouille \n(VGN)",
+    "3": "Spinach and Cheese Cannelloni (VEG)\n\nMarinara Sauce \n(GF)(VGN)\n\nGarlic Bread \n(VEG)",
+    "4": "Ginger Teriyaki Tofu \n(VGN)(GF)",
+    "5": "Malibu Patty Sandwich\n(VEG)",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SIDES",
+    "1": "Spaghetti Pasta \n(VGN)\n\nChunky Roasted Vegetables \n(VGN)(GF)\n\nGarlic Aioli Flat Bread \n(VGN)\n\nParmesan Cheese\n(ON SIDE)",
+    "2": "Lemon Rice \n(GF)(VGN)\n\nSteamed Green Beans \n(VGN)\n\nSpanakopita \n(VEG)",
+    "3": "Roasted Mushrooms and Sautéed Swiss Chard \n(GF)(VGN)\n\n\n\nParmesan Cheese\n(ON SIDE)",
+    "4": "Vegetable Fried Rice \n(VGN)(GF)\n\n\n\nSpring Rolls \n(VGN)\n\nSautéed Asian Green\n(VGN)(GF)",
+    "5": "Home Fries \n(VGN)(GF)\n\nCreamy Kale Crunch Salad \n(VEG)\n\nTOPPINGS: \nTomato, Lettuce, Onion, Pickles, Peppers",
+    "6": "",
+    "0": ""
+  },
+  {
+    "title": "SOUPS",
+    "1": "French Onion (GF)(VGN)\nItalian Wedding (H)(DF)",
+    "2": "Tomato Basil (GF)(VGN)\nChicken Mulligatawny (H)(GF)(DF)",
+    "3": "Lentil Dahl (GF)(VGN)\nBeef Vegetable (H)(GF)(DF)",
+    "4": "Mexican Bean (GF)(VGN)\nCurried Cauliflower (GF)(VGN)",
+    "5": "Roasted Red Pepper Tomato (GF)(VGN)\nTurkey Noodle (H)(DF)",
+    "6": "",
+    "0": ""
+  }
+]
