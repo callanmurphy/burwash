@@ -310,44 +310,14 @@
     "0": "Herbed Rotisserie Chicken\n(H)(GF)(DF)\nChalet Gravy\n(GF)(H)"
   },
   {
-    "title": "COMBO 1 –",
-    "1": "Grilled Tofu Steaks in Hot",
-    "2": "Caponata Pasta with",
-    "3": "Moroccan Chickpea and",
-    "4": "Beyond Burger and Buns",
-    "5": "Vegetable Vindaloo with",
-    "6": "Sesame Tofu and Vegetable",
-    "0": "Spicy Potato, Spinach and"
-  },
-  {
-    "title": "VEGETARIAN",
-    "1": "Szechwan Sauce",
-    "2": "Mediterranean Vegetables",
-    "3": "Vegetable Tagine",
-    "4": "(GF)(VGN)",
-    "5": "Chickpea and Vegetables",
-    "6": "Stirfry",
-    "0": "Paneer Curry"
-  },
-  {
-    "title": "",
-    "1": "(GF)(VGN)",
-    "2": "and Romano Beans",
-    "3": "(GF)(VGN)",
-    "4": "",
-    "5": "(GF)(VGN)(DF)",
-    "6": "(GF)(VGN)",
-    "0": "(VEG) (GF)"
-  },
-  {
-    "title": "",
-    "1": "",
-    "2": "(VEG)",
-    "3": "",
-    "4": "",
-    "5": "",
-    "6": "",
-    "0": ""
+    "title": "COMBO 1 – VEGETARIAN",
+    "1": "Grilled Tofu Steaks in Hot Szechwan Sauce (GF)(VGN)",
+    "2": "Caponata Pasta with Mediterranean Vegetables and Romano Beans (VEG)",
+    "3": "Moroccan Chickpea and Vegetable Tagine (GF)(VGN)",
+    "4": "Beyond Burger and Buns (GF)(VGN)",
+    "5": "Vegetable Vindaloo with Chickpea and Vegetables (GF)(VGN)(DF)",
+    "6": "Sesame Tofu and Vegetable Stirfry (GF)(VGN)",
+    "0": "Spicy Potato, Spinach and Paneer Curry (VEG)(GF)"
   },
   {
     "title": "SIDES",
@@ -364,18 +334,8 @@
     "1": "",
     "2": "Parmesan Cheese\n(VEG)",
     "3": "",
-    "4": "Sauces: BBQ, Hot Sauce, Honey Garlic Sauce",
+    "4": "Burger Topping: Tomato, Lettuce, Onion, Cheese\nSauces: BBQ, Hot Sauce, Honey Garlic Sauce",
     "5": "Cucumber Raita\n(GF)(VEG)",
-    "6": "",
-    "0": ""
-  },
-  {
-    "title": "",
-    "1": "",
-    "2": "",
-    "3": "",
-    "4": "Burger Topping: Tomato, Lettuce, Onion, Cheese",
-    "5": "",
     "6": "",
     "0": ""
   }
