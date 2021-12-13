@@ -50,7 +50,9 @@
 
 .swap {
   background-color: #A30031;
-  border-radius: 10px;
+  border-radius: 0px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
   border: none;
   align-self: flex-start;
   color: white;

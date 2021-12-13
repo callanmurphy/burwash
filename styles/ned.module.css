@@ -49,7 +49,25 @@
 
 .swap {
   background-color: #58ad60;
-  border-radius: 10px;
+  border-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  border: none;
+  align-self: flex-start;
+  color: white;
+  padding: 0px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.swap-inactive {
+  background-color: #58ad60;
+  border-radius: 0px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
   border: none;
   align-self: flex-start;
   color: white;
