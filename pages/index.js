@@ -20,7 +20,8 @@ class Home extends Component {
     super(props);
     this.state = {
       date: new Date(),
-      menu: {name: 'burwash', index: 0, style: style1, colour: '#A30031'}
+      menu: {name: 'burwash', index: 0, style: style1, colour: '#A30031'},
+      alert: {enabled: false, message: 'hello'}
     };
   }
 
@@ -53,6 +54,7 @@ class Home extends Component {
 
     const today = this.state.date;
     const menu = this.state.menu;
+    const alert = this.state.alert;
 
     return (
       <div className="container">
@@ -80,17 +82,19 @@ class Home extends Component {
         </Head>
 
         <main>
-          {/* <div className='alert-bar'>
-            <div className='inline'>
-              <h2>Lunch and Dinner menu has swapped for today! (Dinner: Indian Butter Chicken)</h2>
+          { alert.enabled &&
+            <div className='alert-bar'>
+              <div className='inline'>
+                <h2>{alert.message}</h2>
+              </div>
             </div>
-          </div> */}
-          <div className={menu.style['nav-bar']}>
+          }
+          <div className={alert.enabled ? menu.style['nav-bar'] + ' margin-above' : menu.style['nav-bar'] }>
             <a href="." >
               <img src={menu.name == 'burwash' ? '/crest-outlined.png' : '/crest-outlined-green.png'} alt="Vic Crest" className="logo-top" />
             </a>
           </div>
-          <div>
+          <div className={alert.enabled ? 'margin-above' : ''}>
             <h1 className='title'>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Menu</h1>
             <h2 className='title2'>Week {this.getWeek()}</h2>
             <div className='row-container'>
@@ -98,7 +102,7 @@ class Home extends Component {
                 <p>{menu.name == 'ned' ? 'Burwash Menu' : 'Ned\'s Menu'}</p>
               </button>
             </div>
-            {/* { menu.name == 'burwash' && <img src="/NEW.svg" alt="NEW" className={'new-ribbon'} />} */}
+            {/* { menu.name == 'burwash' && <img src="/new.svg" alt="NEW" className={'new-ribbon'} />} */}
             <div className='row-container'>
               <button onClick={() => this.changeDate('backward')} className={menu.style['arrow']}>
                 <img src="/arrow.svg" alt="Left Arrow" className={'left-arrow'} />
@@ -133,7 +137,7 @@ class Home extends Component {
                 <table className={'mainTable ' + menu.style['mainTable']}>
                 { weeks[this.getWeek() - 1][menu.index].map((col, index) => !(menu.name == 'ned' && (days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday')) &&
                   ((col[this.formatDay(today.getDay())] != "" && col['title']) != "" || col['title'] == "DINNER") ?
-                      ( col['title'] == "DAYS" || col['title'] == "DINNER" || col['title'] == "LUNCH" ) ? 
+                      ( col['title'] == "DAYS" || col['title'] == "DINNER" ) ? 
                       <tr>
                         <th className='heading'>{col['title'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
                         <th className='heading table-newline'>{days[today.getDay()]}</th>
@@ -284,6 +288,10 @@ class Home extends Component {
           
           .space-above {
             padding-top: 35px;
+          }
+
+          .margin-above {
+            margin-top: 60px;
           }
           
           .space-below {
