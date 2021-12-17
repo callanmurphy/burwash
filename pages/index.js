@@ -97,14 +97,14 @@ class Home extends Component {
           <div className={alert.enabled ? 'margin-above' : ''}>
             <h1 className='title'>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Menu</h1>
             <h2 className='title2'>Week {this.getWeek()}</h2>
-            <div className='row-container'>
-              <p>Ned's Café is closed due to COVID-19 :(</p>
-            </div>
             {/* <div className='row-container'>
+              <p>Ned's Café is closed due to COVID-19 :(</p>
+            </div> */}
+            <div className='row-container'>
               <button onClick={() => this.setState({menu: menu.name == 'burwash' ? {name: 'ned', index: 1, style: style2, colour: '#58ad60'} : {name: 'burwash', index: 0, style: style1, colour: '#A30031'} })} className={menu.style['swap']}>
                 <p>{menu.name == 'ned' ? 'Burwash Menu' : 'Ned\'s Menu'}</p>
               </button>
-            </div> */}
+            </div>
             {/* { menu.name == 'burwash' && <img src="/new.svg" alt="NEW" className={'new-ribbon'} />} */}
             <div className='row-container'>
               <button onClick={() => this.changeDate('backward')} className={menu.style['arrow']}>
