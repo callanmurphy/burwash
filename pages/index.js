@@ -140,7 +140,7 @@ class Home extends Component {
                 <table className={'mainTable ' + menu.style['mainTable']}>
                 { weeks[this.getWeek() - 1][menu.index].map((col, index) => !(menu.name == 'ned' && (days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday')) &&
                   ((col[this.formatDay(today.getDay())] != "" && col['title']) != "" || col['title'] == "DINNER") ?
-                      ( col['title'] == "DAYS" || col['title'] == "DINNER" ) ? 
+                      ( col['title'] == "DAYS" || col['title'] == "DINNER" || col['title'] == "LUNCH" ) ? 
                       <tr>
                         <th className='heading'>{col['title'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
                         <th className='heading table-newline'>{days[today.getDay()]}</th>
