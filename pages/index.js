@@ -313,7 +313,7 @@ class Home extends Component {
             margin: 0 auto;
             text-align: center;
             width: 80%;
-            border-radius: 10px 10px 0px 0px;
+            // border-radius: 10px 10px 0px 0px;
             overflow: hidden;
             font-weight: 300;
           }
@@ -331,11 +331,11 @@ class Home extends Component {
           }
           
           .mainTable th:first-child {
-            border-radius: 10px 0 0 0px;
+            // border-radius: 10px 0 0 0px;
           }
           
           .mainTable th:last-child {
-            border-radius: 0 10px 0px 0;
+            // border-radius: 0 10px 0px 0;
           }
           
           .mainTable tr:nth-of-type(even) {
