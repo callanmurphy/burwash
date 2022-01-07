@@ -45,7 +45,7 @@ class Home extends Component {
     // source: https://www.javatpoint.com/calculate-current-week-number-in-javascript
     var oneJan =  new Date(this.state.date.getFullYear(), 0, 1);   
     var numberOfDays =  Math.floor((this.state.date - oneJan) / (24 * 60 * 60 * 1000));
-    var result = Math.ceil((numberOfDays - 2) / 7);
+    var result = Math.ceil((numberOfDays - 1) / 7);
     var remainder = (result - -1) % 4
     return remainder + 1
   }
