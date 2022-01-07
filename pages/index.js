@@ -126,16 +126,56 @@ class Home extends Component {
               <div className='center'>
                 <b>Closed for Winter Break</b>
               </div>
+            : (today.getMonth() == 0 && today.getDate() == 9 && menu.name == 'burwash') ?
+              <>
+                <div className='center space-below'>
+                  <b>Dinner Only (first meal of 2022)</b>
+                </div>
+                <table className={'mainTable ' + menu.style['mainTable']}>
+                      <tr>
+                        <th className='heading'>Dinner</th>
+                        <th className='heading table-newline'>Sunday</th>
+                      </tr>
+                      <tr>
+                        <td className='heading'>SOUPS</td>
+                        <td className='table-newline'>{"Minestrone (VGN) \n\n Cream of Mushroom (GF)(DF)"}</td>
+                      </tr>
+                      <tr>
+                        <td className='heading'>PIZZA</td>
+                        <td className='table-newline'>{"3 Cheese (VGN) \n\n Pepperoni"}</td>
+                      </tr>
+                      <tr>
+                        <td className='heading'>SALAD BAR</td>
+                        <td className='table-newline'>{"Green salad, Crudités, Composed Salads, Dressings"}</td>
+                      </tr>
+                      <tr>
+                        <td className='heading'>DESSERT</td>
+                        <td className='table-newline'>{"Assorted Brownies"}</td>
+                      </tr>
+
+                      <tr>
+                        <th className='heading'></th>
+                        <th className='heading table-newline'></th>
+                      </tr>
+                      <tr>
+                        <td className='heading'>COMBO 1 - MEAT</td>
+                        <td className='table-newline'>{"Roast Chicken with Swiss Chalet Sauce \n (H)(GF)(DF)"}</td>
+                      </tr>
+                      <tr>
+                        <td className='heading'>COMBO 1 - VEGETARIAN</td>
+                        <td className='table-newline'>{"Chickpea and Vegetable Curry \n (VGN)(GF)"}</td>
+                      </tr>
+                      <tr>
+                        <td className='heading'>SIDES</td>
+                        <td className='table-newline'>{"Rice Pilaf (VGN)(GF) \n\n Spanakopita (2pcs)(VEG) \n\n Roasted California Medley"}</td>
+                      </tr>
+                </table>
+              </>
             : today.getFullYear() > 2021 ?
               <div className='center'>
                 <b>2022 menu not yet released</b>
               </div>
             : <div>
-                {today.getMonth() == 0 && today.getDate() == 9 &&
-                  <div className='center space-below'>
-                    <b>Dinner Only (first meal of 2022)</b>
-                  </div>
-                }
                 {/* 
                 "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts" 
                 "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese"
