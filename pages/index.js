@@ -126,6 +126,10 @@ class Home extends Component {
               <div className='center'>
                 <b>Closed for Winter Break</b>
               </div>
+            : today.getFullYear() > 2021 ?
+              <div className='center'>
+                <b>2022 menu not yet released</b>
+              </div>
             : <div>
                 {today.getMonth() == 0 && today.getDate() == 9 &&
                   <div className='center space-below'>
