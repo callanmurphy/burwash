@@ -4,7 +4,7 @@ import week1 from '../data/burwash2022/week1.json';
 import week2 from '../data/burwash2021/week2.json';
 import week3 from '../data/burwash2021/week3.json';
 import week4 from '../data/burwash2021/week4.json';
-import ned1 from '../data/ned2021/week1.json';
+import ned1 from '../data/ned2022/week1.json';
 import ned2 from '../data/ned2021/week2.json';
 import ned3 from '../data/ned2021/week3.json';
 import ned4 from '../data/ned2021/week4.json';
@@ -160,11 +160,11 @@ class Home extends Component {
                         <th className='heading table-newline'></th>
                       </tr>
                       <tr>
-                        <td className='heading'>COMBO 1 - MEAT</td>
+                        <td className='heading'>MEAT</td>
                         <td className='table-newline'>{"Roast Chicken with Swiss Chalet Sauce \n (H)(GF)(DF)"}</td>
                       </tr>
                       <tr>
-                        <td className='heading'>COMBO 1 - VEGETARIAN</td>
+                        <td className='heading'>VEGETARIAN</td>
                         <td className='table-newline'>{"Chickpea and Vegetable Curry \n (VGN)(GF)"}</td>
                       </tr>
                       <tr>
@@ -173,11 +173,16 @@ class Home extends Component {
                       </tr>
                 </table>
               </>
-            : (today.getMonth() > 0 || today.getDate() > 16 || menu.name == 'ned') ?
+            : (today.getMonth() > 0 || today.getDate() > 16) ?
               <div className='center'>
                 <b>Menu not yet released</b>
               </div>
             : <div>
+                { menu.name == 'ned' && !(today.getDay() == 0 || today.getDay() == 6) &&
+                  <div className='center space-below'>
+                    <b>*Ned's Menu is subject to change*</b>
+                  </div>
+                }
                 {/* 
                 "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts" 
                 "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese"
@@ -230,7 +235,7 @@ class Home extends Component {
                       </div>
                     }
                   </div> :
-                  <div id='schedule' className={'space-above'}>
+                  <div id='schedule' className={today.getDay() == 0 || today.getDay() == 6 ? '' : 'space-above'}>
                   <h3 className={menu.style['schedule-title'] + ' center'}>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Schedule</h3>
                   { today.getDay() == 0 || today.getDay() == 6 ?
                     <div className="title2">
@@ -376,7 +381,7 @@ class Home extends Component {
           }
           
           .space-below {
-            padding-bottom: 40px;
+            padding-bottom: 30px;
           }
           
           h2 {

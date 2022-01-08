@@ -1,0 +1,44 @@
+[
+    {
+      "title": "DAYS",
+      "1": "MONDAY",
+      "2": "TUESDAY",
+      "3": "WEDNESDAY",
+      "4": "THURSDAY",
+      "5": "FRIDAY",
+      "6": "SATURDAY",
+      "0": "SUNDAY"
+    },
+    {
+      "title": "MEAT ENTREE",
+      "1": "Chicken Mushroom Mornay\n Penne Pasta (H)",
+      "2": "Beef Lasagna",
+      "3": "Crispy Chicken (H)",
+      "4": "",
+      "5": "Meatballs in Marinara Sauce \n (H)(DF)"
+    },
+    {
+      "title": "VEGETABLE ENTREE",
+      "1": "Mushroom Marinara\n Penne pasta\n (VGN)",
+      "2": "Vegetable Lasagna\n (VEG)",
+      "3": "Meatless Chicken Tenders\n (VGN)",
+      "4": "Spinach and Cheese Cannelloni (VEG)\n  \n Marinara Sauce \n (GF)(VGN) \n\n Garlic Bread \n (VEG)",
+      "5": "Vegan Meatballs in Marinara Sauce \n (VGN)"
+    },
+    {
+      "title": "SIDES",
+      "1": "Garlic Bread \n (VEG)\n\n Roasted Broccoli and sweet Pepper blend \n (VGN)(GF)",
+      "2": "Garlic Bread \n (VEG)\n\n Balsamic Glazed Zucchini \n (VGN)(GF)\n\n Marinara Sauce \n (GF)(VGN)",
+      "3": "Mac & Cheese with \n (Bacon or Roasted Veg Topping) \n and extra Cheese sauce\n\n Vegetable Medley\n (VGN) (GF) \n\n Toppings: onion, tomato, pickles, mustard, ketchup",
+      "4": "Roasted Mushrooms and Sautéed Swiss Chard \n (GF)(VGN) \n\n Parmesan Cheese\n (ON SIDE)",
+      "5": "Spaghetti Pasta \n (VGN) \n\n Chunky Roasted Vegetables \n (VGN)(GF) \n\n Garlic Aioli Flat Bread \n (VGN) \n\n Parmesan Cheese\n (ON SIDE)"
+    },
+    {
+      "title": "SOUPS",
+      "1": "Mushroom Barley\n (VGN)\n\n Chicken Mulligatawny\n (GF)(H)(DF)",
+      "2": "Hearty Minestrone\n (VGN)\n\n Chicken Noodle\n (H)(DF)",
+      "3": "Lentil & Red Pepper\n (GF)(VGN)\n\n Tom Yum Chicken\n (GF)(H)(DF)",
+      "4": "Potato Leek\n (GF)(VEG)\n\n Beef Barley\n (H)(DF)",
+      "5": "Cream Of Roasted Squash\n (GF)(VGN)\n\n Chicken Vegetable\n (GF)(H)(DF)"
+    }
+  ]

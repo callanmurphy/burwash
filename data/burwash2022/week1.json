@@ -43,14 +43,14 @@
     "title": "COMPOSED SALAD",
     "1": "Greek Pasta Salad\n (VEG)",
     "2": "Greek Pasta Salad\n (VEG)",
-    "3": "Quinoa Black Bean andCorn Salad\n (GF)(VGN)",
+    "3": "Quinoa Black Bean and Corn Salad\n (GF)(VGN)",
     "4": "Quinoa Black Bean and Corn Salad\n (GF)(VGN)",
     "5": "Bean and Chickpea Salad\n (GF)(VGN)",
     "6": "Bean and Chickpea Salad\n (GF)(VGN)",
     "0": "Chef’s Choice Salad\n (VEG)"
   },
   {
-    "title": "MEAT\n FEATURED SALAD",
+    "title": "MEAT SALAD",
     "1": "Southwest Beef Bowl\n (H)(GF)(DF)",
     "2": "Mediterranean Chicken Bowl\n (H)(GF)(DF)",
     "3": "Lime Salmon Bowl\n (H)(GF)(DF)",
@@ -60,7 +60,7 @@
     "0": ""
   },
   {
-    "title": "VEGETARIAN FEATURED SALAD",
+    "title": "VEGETARIAN SALAD",
     "1": "Southwest Tofu Bowl\n (VGN)(GF)",
     "2": "Mediterranean Falafel Bowl\n (VGN)(GF)",
     "3": "Lime Tofu Bowl\n (VGN)(GF)",
