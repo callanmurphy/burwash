@@ -99,13 +99,14 @@ class Home extends Component {
             <h1 className='title column-big'>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Menu</h1>
             { <img src="/2022.svg" alt="NEW" className={menu.name == 'ned' ? 'new-year-ned' : 'new-year' } />}
             <h2 className='title2'>Week {this.getWeek()}</h2>
-            {/* <div className='row-container'>
-              <p>Ned's Café is closed due to COVID-19 :(</p>
-            </div> */}
             <div className='row-container'>
-              <button onClick={() => this.setState({menu: menu.name == 'burwash' ? {name: 'ned', index: 1, style: style2, colour: '#58ad60'} : {name: 'burwash', index: 0, style: style1, colour: '#A30031'} })} className={menu.style['swap']}>
+              <label class="switch">
+                <input type="checkbox" onClick={() => this.setState({menu: menu.name == 'burwash' ? {name: 'ned', index: 1, style: style2, colour: '#58ad60'} : {name: 'burwash', index: 0, style: style1, colour: '#A30031'} })} />
+                <span class="slider round"></span>
+              </label>
+              {/* <button onClick={() => this.setState({menu: menu.name == 'burwash' ? {name: 'ned', index: 1, style: style2, colour: '#58ad60'} : {name: 'burwash', index: 0, style: style1, colour: '#A30031'} })} className={menu.style['swap']}>
                 <p>{menu.name == 'ned' ? 'Burwash Menu' : 'Ned\'s Menu'}</p>
-              </button>
+              </button> */}
             </div>
             {/* { menu.name == 'burwash' && <img src="/new.svg" alt="NEW" className={'new-ribbon'} />} */}
             <div className='row-container'>
@@ -328,6 +329,10 @@ class Home extends Component {
             transform: rotate(20deg);
           }
 
+          .not-bolded {
+            font-weight: 300;
+          }
+
           .new-year-ned {
             position: absolute;
             width: 60px;
@@ -490,6 +495,76 @@ class Home extends Component {
           .logo {
             height: 1.5em;
             margin-right: 12px;
+          }
+
+          // toggle switch css source: https://www.w3schools.com/howto/howto_css_switch.asp
+          /* The switch - the box around the slider */
+          .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            align-self: flex-start;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+
+          /* Hide default HTML checkbox */
+          .switch input {
+            opacity: 0 !important;
+            width: 0;
+            height: 0;
+          }
+
+          /* The slider */
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #A30031;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+
+          .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+
+          input:checked + .slider {
+            background-color: #58ad60;
+          }
+
+          input:focus + .slider {
+            box-shadow: 0 0 1px #58ad60;
+          }
+
+          input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+          }
+
+          /* Rounded sliders */
+          .slider.round {
+            border-radius: 34px;
+          }
+
+          .slider.round:before {
+            border-radius: 50%;
           }
           
           @media screen and (min-width: 0px) and (max-width: 650px) {
