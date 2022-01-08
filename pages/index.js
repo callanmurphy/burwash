@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import React, { Component } from 'react';
-import week1 from '../data/burwash/week1.json';
-import week2 from '../data/burwash/week2.json';
-import week3 from '../data/burwash/week3.json';
-import week4 from '../data/burwash/week4.json';
-import ned1 from '../data/ned/week1.json';
-import ned2 from '../data/ned/week2.json';
-import ned3 from '../data/ned/week3.json';
-import ned4 from '../data/ned/week4.json';
+import week1 from '../data/burwash2022/week1.json';
+import week2 from '../data/burwash2021/week2.json';
+import week3 from '../data/burwash2021/week3.json';
+import week4 from '../data/burwash2021/week4.json';
+import ned1 from '../data/ned2021/week1.json';
+import ned2 from '../data/ned2021/week2.json';
+import ned3 from '../data/ned2021/week3.json';
+import ned4 from '../data/ned2021/week4.json';
 import style1 from '../styles/burwash.module.css';
 import style2 from '../styles/ned.module.css';
 
@@ -46,7 +46,8 @@ class Home extends Component {
     var oneJan =  new Date(this.state.date.getFullYear(), 0, 1);   
     var numberOfDays =  Math.floor((this.state.date - oneJan) / (24 * 60 * 60 * 1000));
     var result = Math.ceil((numberOfDays - 1) / 7);
-    var remainder = (result - -1) % 4
+    var remainder = (result - -1) % 3
+    // alert(numberOfDays.toString() + result.toString() + remainder.toString())
     return remainder + 1
   }
 
@@ -95,7 +96,8 @@ class Home extends Component {
             </a>
           </div>
           <div className={alert.enabled ? 'margin-above' : ''}>
-            <h1 className='title'>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Menu</h1>
+            <h1 className='title column-big'>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Menu</h1>
+            { <img src="/2022.svg" alt="NEW" className={menu.name == 'ned' ? 'new-year-ned' : 'new-year' } />}
             <h2 className='title2'>Week {this.getWeek()}</h2>
             {/* <div className='row-container'>
               <p>Ned's Café is closed due to COVID-19 :(</p>
@@ -171,9 +173,9 @@ class Home extends Component {
                       </tr>
                 </table>
               </>
-            : today.getFullYear() > 2021 ?
+            : (today.getMonth() > 0 || today.getDate() > 16 || menu.name == 'ned') ?
               <div className='center'>
-                <b>2022 menu not yet released</b>
+                <b>Menu not yet released</b>
               </div>
             : <div>
                 {/* 
@@ -188,6 +190,11 @@ class Home extends Component {
                       <tr>
                         <th className='heading'>{col['title'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
                         <th className='heading table-newline'>{days[today.getDay()]}</th>
+                      </tr>
+                      : col['title'] == "FOOD BAR" ?
+                      <tr>
+                        <td className='heading new'>{col['title']}</td>
+                        <td className='table-newline new'>{col[this.formatDay(today.getDay())]}</td>
                       </tr>
                       :
                       <tr>
@@ -272,6 +279,11 @@ class Home extends Component {
           .heading {
             font-weight: 500;
           }
+
+          .column-big {
+            padding-right: 45px;
+            // width: 90%;
+          }
           
           .alert-bar {
             position: absolute;
@@ -298,6 +310,28 @@ class Home extends Component {
           
           .alert-bar h2 {
             font-size: 16px;
+          }
+
+          .new-year {
+            position: absolute;
+            width: 60px;
+            left: 245px; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto;
+            top: 112px;
+            transform: rotate(20deg);
+          }
+
+          .new-year-ned {
+            position: absolute;
+            width: 60px;
+            left: 210px; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto;
+            top: 112px;
+            transform: rotate(20deg);
           }
 
           .new-ribbon {
