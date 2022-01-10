@@ -202,6 +202,11 @@ class Home extends Component {
                         <td className='heading new'>{col['title']}</td>
                         <td className='table-newline new'>{col[this.formatDay(today.getDay())]}</td>
                       </tr>
+                      : ((col['title'] == "MEAT ENTREE" || col['title'] == "VEGETABLE ENTREE") && menu.name == 'ned' && today.getDate() == 10 && today.getMonth() == 0) ?
+                      <tr>
+                        <td className='heading strike'>{col['title']}</td>
+                        <td className='table-newline strike'>{col[this.formatDay(today.getDay())]}</td>
+                      </tr>
                       :
                       <tr>
                         <td className='heading'>{col['title']}</td>
@@ -495,6 +500,10 @@ class Home extends Component {
           .logo {
             height: 1.5em;
             margin-right: 12px;
+          }
+
+          .strike {
+            text-decoration: line-through;
           }
 
           // toggle switch css source: https://www.w3schools.com/howto/howto_css_switch.asp
