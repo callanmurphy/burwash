@@ -5,7 +5,7 @@ import week2 from '../data/burwash2022/week2.json';
 import week3 from '../data/burwash2021/week3.json';
 import week4 from '../data/burwash2021/week4.json';
 import ned1 from '../data/ned2022/week1.json';
-import ned2 from '../data/ned2021/week2.json';
+import ned2 from '../data/ned2022/week2.json';
 import ned3 from '../data/ned2021/week3.json';
 import ned4 from '../data/ned2021/week4.json';
 import style1 from '../styles/burwash.module.css';
@@ -202,11 +202,11 @@ class Home extends Component {
                         <td className='heading new'>{col['title']}</td>
                         <td className='table-newline new'>{col[this.formatDay(today.getDay())]}</td>
                       </tr>
-                      : ((col['title'] == "MEAT ENTREE" || col['title'] == "VEGETABLE ENTREE" || col['title'] == "SIDES") && menu.name == 'ned' && 10 <= today.getDate() <= 14 && today.getMonth() == 0) ?
-                      <tr>
-                        <td className='heading strike'>{col['title']}</td>
-                        <td className='table-newline strike'>{col[this.formatDay(today.getDay())]}</td>
-                      </tr>
+                      // : ((col['title'] == "MEAT ENTREE" || col['title'] == "VEGETABLE ENTREE" || col['title'] == "SIDES") && menu.name == 'ned' && today.getMonth() == 0) ?
+                      // <tr>
+                      //   <td className='heading strike'>{col['title']}</td>
+                      //   <td className='table-newline strike'>{col[this.formatDay(today.getDay())]}</td>
+                      // </tr>
                       :
                       <tr>
                         <td className='heading'>{col['title']}</td>

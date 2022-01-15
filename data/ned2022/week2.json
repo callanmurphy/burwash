@@ -1,0 +1,44 @@
+[
+    {
+      "title": "DAYS",
+      "1": "MONDAY",
+      "2": "TUESDAY",
+      "3": "WEDNESDAY",
+      "4": "THURSDAY",
+      "5": "FRIDAY",
+      "6": "SATURDAY",
+      "0": "SUNDAY"
+    },
+    {
+      "title": "MEAT ENTREE",
+      "1": "Beef Lasagna (H)",
+      "2": "Chicken Mushroom Mornay\n Penne pasta (H)",
+      "3": "",
+      "4": "Crispy Chicken (H)",
+      "5": "Meatballs in Marinara Sauce \n (H)(DF)"
+    },
+    {
+      "title": "VEGETABLE ENTREE",
+      "1": "Vegetable Lasagna (VEG)",
+      "2": "Mushroom Marinara\n Penne pasta (VGN)",
+      "3": "Spinach and Cheese Cannelloni (VEG)\n\n Marinara Sauce (GF)(VGN)\n\n Garlic Bread (VEG)",
+      "4": "Meatless Chicken Tenders\n (VGN)",
+      "5": "Vegan Meatballs in Marinara Sauce \n (VGN)"
+    },
+    {
+      "title": "SIDES",
+      "1": "Garlic Bread \n (VEG)\n\n Balsamic Glazed Zucchini \n (VGN)(GF)\n\n Marinara Sauce \n (GF)(VGN)",
+      "2": "Garlic Bread \n (VEG)\n\n Roasted Seasonal Vegetables \n (VGN)(GF)",
+      "3": "Roasted Mushrooms and Sautéed Swiss Chard \n (GF)(VGN) \n\n Parmesan Cheese\n (ON SIDE)",
+      "4": "Mac & Cheese with \n (Bacon or Roasted Veg Topping) \n and extra cheese sauce\n\n Vegetable Medley\n (VGN) (GF) \n\n Toppings: onion, tomato, pickles, mustard, ketchup",
+      "5": "Spaghetti Pasta \n (VGN) \n\n Chunky Roasted Vegetables \n (VGN)(GF) \n\n Garlic Aioli Flat Bread \n (VGN) \n\n Parmesan Cheese\n (ON SIDE)"
+    },
+    {
+      "title": "SOUPS",
+      "1": "Mexican Bean\n (GF)(VGN)\n\n Tom Yum Chicken \n (H)(GF)(DF",
+      "2": "Lentil Dahl\n (GF)(VGN)\n\n Italian Wedding\n (H)(DF)",
+      "3": "Broccoli & Cheese \n (GF)(VEG)\n\n Lemon Chicken Orzo \n (H)(DF)",
+      "4": "Miso – Mushroom (GF)(VGN)\n\n Chicken Mulligatawny (H)(GF)(DF)",
+      "5": "Curried Cauliflower \n (GF)(VGN)\n\n Seafood Creole \n (H)(GF)(DF)"
+    }
+  ]
