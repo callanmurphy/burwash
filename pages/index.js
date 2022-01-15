@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, { Component } from 'react';
 import week1 from '../data/burwash2022/week1.json';
-import week2 from '../data/burwash2021/week2.json';
+import week2 from '../data/burwash2022/week2.json';
 import week3 from '../data/burwash2021/week3.json';
 import week4 from '../data/burwash2021/week4.json';
 import ned1 from '../data/ned2022/week1.json';
@@ -97,7 +97,7 @@ class Home extends Component {
           </div>
           <div className={alert.enabled ? 'margin-above' : ''}>
             <h1 className='title column-big'>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Menu</h1>
-            { <img src="/2022.svg" alt="NEW" className={menu.name == 'ned' ? 'new-year-ned' : 'new-year' } />}
+            {/* { <img src="/2022.svg" alt="NEW" className={menu.name == 'ned' ? 'new-year-ned' : 'new-year' } />} */}
             <h2 className='title2'>Week {this.getWeek()}</h2>
             <div className='row-container'>
               <label class="switch">
@@ -174,7 +174,7 @@ class Home extends Component {
                       </tr>
                 </table>
               </>
-            : (today.getMonth() > 0 || today.getDate() > 16) ?
+            : (today.getMonth() > 0 || today.getDate() > 23) ?
               <div className='center'>
                 <b>Menu not yet released</b>
               </div>
@@ -292,8 +292,7 @@ class Home extends Component {
           }
 
           .column-big {
-            padding-right: 45px;
-            // width: 90%;
+            // padding-right: 45px;
           }
           
           .alert-bar {

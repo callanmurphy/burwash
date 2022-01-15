@@ -1,0 +1,182 @@
+[
+    {
+        "title": "DAYS",
+        "1": "MONDAY",
+        "2": "TUESDAY",
+        "3": "WEDNESDAY",
+        "4": "THURSDAY",
+        "5": "FRIDAY",
+        "6": "SATURDAY",
+        "0": "SUNDAY"
+    },
+    {
+        "title": "ALL-DAY",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "0": ""
+      },
+    {
+      "title": "SOUPS",
+      "1": "Mexican Bean\n (GF)(VGN)\n Tom Yum Chicken \n (H)(GF)(DF",
+      "2": "Lentil Dahl\n (GF)(VGN)\n Italian Wedding\n (H)(DF)",
+      "3": "Broccoli & Cheese \n (GF)(VEG)\n Lemon Chicken Orzo \n (H)(DF)",
+      "4": "Miso – Mushroom\n (GF)(VGN)\n Chicken Mulligatawny (H)(GF)(DF)",
+      "5": "Curried Cauliflower \n (GF)(VGN)\n Seafood Creole \n (H)(GF)(DF)",
+      "6": "Vegetable Barley\n (VGN)\n Chicken Noodle\n (H)(DF)",
+      "0": "Spinach & Red Lentil \n (GF)(VGN)\n Chicken & Bean \n (H)(GF)(DF)"
+    },
+    {
+      "title": "FOOD BAR",
+      "1": "Hot Sandwich Bar",
+      "2": "Pizza Bar",
+      "3": "Hot Sandwich Bar",
+      "4": "Pizza Bar",
+      "5": "Hot Sandwich Bar",
+      "6": "Pizza Bar – Dinner Only",
+      "0": "Pizza Bar – Dinner Only"
+    },
+    {
+      "title": "COMPOSED SALAD",
+      "1": "Tabbouleh with Red Quinoa\n (GF)(VGN)",
+      "2": "Tabbouleh with Red Quinoa\n (GF)(VGN)",
+      "3": "Wild Rice and Lentil Salad\n (GF)(VGN)",
+      "4": "Wild Rice and Lentil Salad\n (GF)(VGN)",
+      "5": "Edamame, Tomato, & Corn\n (GF)(VGN)",
+      "6": "Edamame, Tomato, & Corn\n (GF)(VGN)",
+      "0": "Chef’s Choice Salad\n (VEG)"
+    },
+    {
+      "title": "MEAT SALAD",
+      "1": "Harvest Chicken Bowl\n (H)(GF)(DF)",
+      "2": "Tex Mex Beef Bowl \n (H)(GF)(DF)",
+      "3": "Thai Salad Bowl\n (H)(GF)(DF)",
+      "4": "Japanese Salmon Bowl\n (H)(GF)(DF)",
+      "5": "Mezze Bowl\n (H)(GF)(DF)",
+      "6": "",
+      "0": ""
+    },
+    {
+      "title": "VEGETARIAN SALAD",
+      "1": "Harvest Bean Bowl\n (GF)(VGN)",
+      "2": "Tex Mex Bean Bowl \n (GF)(VGN)",
+      "3": "Thai Salad Bowl\n (GF)(VGN)",
+      "4": "Japanese Tempeh Bowl\n (GF)(VGN)",
+      "5": "Mezze Bowl\n (GF)(VGN)",
+      "6": "",
+      "0": ""
+    },
+    {
+      "title": "DESSERT",
+      "1": "Chocolate Pudding Cake",
+      "2": "Cobbler",
+      "3": "Carrot Cake",
+      "4": "Gingerbread Cake",
+      "5": "Caramel Swirl Cake",
+      "6": "Cream Pies",
+      "0": "Variety of Squares and Bars"
+    },
+    {
+        "title": "LUNCH",
+        "1": "MONDAY",
+        "2": "TUESDAY",
+        "3": "WEDNESDAY",
+        "4": "THURSDAY",
+        "5": "FRIDAY",
+        "6": "SATURDAY",
+        "0": "SUNDAY"
+      },
+    {
+      "title": "MEAT",
+      "1": "Crockpot BBQ Chicken Breast  (H)(GF)(DF)",
+      "2": "Chili Lime Tilapia with Sautéed Corn \n (H)(GF)(DF)",
+      "3": "Indian Butter Chicken\n (H)(GF)",
+      "4": "Beef Lasagna \n (H)",
+      "5": "Jerk Chicken\n (H)(GF)(DF)",
+      "6": "Combo 1\n \n Meatballs in Marinara (H)(DF)\n\n Vegan Meatballs in Marinara (VGN)\n\n Spaghetti (VGN)\n\n Sautéed Broad Bean Italian Blend\n (GF)(VGN)\n\n Toasted Garlic Roll (GF)(VGN)\n\n\n Combo 2\n\n Breakfast Options",
+      "0": "Combo 1\n \n\n Ginger Lemongrass Chicken\n (H)(GF)(DF)\n\n Ginger Lemongrass Tofu\n (GF)(VGN)\n Jasmine Rice (GF)(VGN)\n\n Stir Fried Broccoli and Red Cabbage\n (GF)(VGN)\n\n Mushroom Pot stickers-2 pcs (VEG)\n \n\n Combo 2\n\n Breakfast Options"
+    },
+    {
+      "title": "VEGETARIAN",
+      "1": "Vegan Cabbage Roll Casserole \n (GF)(VGN)",
+      "2": "Chili Lime Vegan protein strips with Sautéed Corn \n (GF)(VGN)",
+      "3": "Paneer and Bell Pepper Masala\n (GF)(VEG)",
+      "4": "Vegetable Lasagna\n (VEG)\n \n\n Pasta \n (VGN)",
+      "5": "Jamaican Vegetable and Chickpea Curry\n (GF)(VGN)",
+      "6": "",
+      "0": ""
+    },
+    {
+      "title": "SIDES",
+      "1": "Roasted Red Skin Potatoes\n (GF)(VGN)\n \n\n Breaded Pickle Spears\n (VEG)\n \n\n Sautéed Green and yellow Beans with Cherry Tomatoes\n (GF)(VGN)",
+      "2": "Brown Vegetable Pilaf \n (GF)(VGN)\n \n\n Roasted Root Vegetable and Broccoli  \n (GF)(VGN)\n \n\n Crispy Jalapeno \n (VEG)",
+      "3": "Lime Leaf Basmati Rice\n (GF)(VGN)\n \n\n Curry Spiced Cauliflower and Sweet Potato \n (GF)(VGN)\n \n\n Vegetable Samosa (1 PC)\n (VEG)",
+      "4": "Marinara Sauce\n (GF)(VGN)\n \n\n Roasted Heirloom Carrot and Blanched Broccoli Medley\n (GF)(VGN)\n \n\n Garlic Bread\n (VEG)",
+      "5": "Rice and Peas\n (GF)(VGN)\n Whole Roasted Okra, Red Pepper and Fried Plantain \n (GF)(VGN)\n Vegetable Jamaican Patties\n (VGN)",
+      "6": "",
+      "0": ""
+    },
+    {
+      "title": "PORTION\n TOPPINGS",
+      "1": "",
+      "2": "",
+      "3": "Cucumber Raita\n (ON ICE, ON SIDE)",
+      "4": "Parmesan Cheese\n (ON ICE, ON SIDE)",
+      "5": "",
+      "6": "Parmesan Cheese\n (ON SIDE)",
+      "0": "Garnish\n Carrots, Cilantro, Bean Sprouts"
+    },
+    {
+        "title": "DINNER",
+        "1": "MONDAY",
+        "2": "TUESDAY",
+        "3": "WEDNESDAY",
+        "4": "THURSDAY",
+        "5": "FRIDAY",
+        "6": "SATURDAY",
+        "0": "SUNDAY"
+      },
+    {
+      "title": "MEAT",
+      "1": "Korean Bulgogi Beef\n (H)(GF)(DF)",
+      "2": "Chicken Alfredo\n (H)(GF)",
+      "3": "BBQ Pork Ribs \n (GF)(DF)",
+      "4": "Chicken Fingers\n (H)",
+      "5": "Shrimp Fajita\n (H)(GF)(DF)",
+      "6": "Herbed Rotisserie Chicken\n (H)(GF)(DF) \n \n\n Chalet Gravy\n (GF)(H)",
+      "0": "Thai Sweet Chili Pork Loin\n (GF)(DF)"
+    },
+    {
+      "title": "VEGETARIAN",
+      "1": "Korean Spicy BBQ Tofu Steak and Broccoli\n (GF)(VGN)",
+      "2": "Vegan Bolognese\n (VGN)",
+      "3": "BBQ Tofu Steaks \n (GF)(VGN)",
+      "4": "Vegetarian Chicken Fingers \n (VGN)",
+      "5": "Kidney Bean and Garbanzo Bean Fajita \n (GF)(VGN)",
+      "6": "Spicy Potato, Spinach and Paneer Curry\n (VEG) (GF)",
+      "0": "Vegan Tofu and Mushroom Satay \n  (GF)(VGN)"
+    },
+    {
+      "title": "SIDES",
+      "1": "Vegetable Japchae\n (Glass Noodle Stir Fry)\n (VGN)\n \n\n Sautéed Bok Choy and Asian vegetable \n (GF)(VGN)\n \n\n Vegetable Dim Sum (3PCS)\n (VEG)",
+      "2": "Fettuccini Pasta/GF Option\n (VGN)\n \n\n Garlic Bread\n (VEG)\n \n\n \n\n Romanesco Vegetables\n  (GF)(VGN)",
+      "3": "Steak Cut Fries \n  (VEG)\n \n\n Honey Glazed Green top Carrots and Sugar snap peas \n (GF)(VGN)\n \n\n Creamy Coleslaw\n (VEG) (GF)",
+      "4": "Chunky Bruschetta and Roast Vegetables\n  (GF)(VGN)\n \n\n Herbed Smash Potatoes\n (GF)(VGN)\n \n\n Cheese & Garlic Baguette Toast\n (VEG)",
+      "5": "Warm Flour Tortillas\n (VEG)\n \n\n Mexican Rice \n (GF)(VGN)\n \n\n California Roast Vegetable Mix\n (GF)(VGN)\n Jalapeno Poppers\n (VEG)",
+      "6": "Wild Rice Pilaf\n (GF)(VGN)\n  \n Roasted Button Mushroom, Bell Peppers and Cauliflower \n (GF)(VGN)\n \n\n Mini Vegetable Samosa (3PCS) \n (VGN)",
+      "0": "Jasmine Rice\n (GF)(VGN)\n \n\n Tempura Vegetables\n (VEG)\n \n\n Honey Garlic String Beans\n (GF)(VGN)"
+    },
+    {
+      "title": "PORTION\n TOPPINGS",
+      "1": "Spicy Homemade Kim Chi \n (VEG)",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "Toppings: Shredded Lettuce, Cheese, Salsa, Guacamole, Sour Cream\n (ON ICE)",
+      "6": "",
+      "0": ""
+    }
+  ]
