@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React, { Component } from 'react';
 import week1 from '../data/burwash2022/week1.json';
 import week2 from '../data/burwash2022/week2.json';
-import week3 from '../data/burwash2021/week3.json';
+import week3 from '../data/burwash2022/week3.json';
 import week4 from '../data/burwash2021/week4.json';
 import ned1 from '../data/ned2022/week1.json';
 import ned2 from '../data/ned2022/week2.json';
