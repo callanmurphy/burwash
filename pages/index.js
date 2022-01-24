@@ -174,7 +174,7 @@ class Home extends Component {
                       </tr>
                 </table>
               </>
-            : (today.getMonth() > 0 || today.getDate() > 23) ?
+            : ((today.getMonth() > 0 || today.getDate() > 23) && menu.name == 'ned') ?
               <div className='center'>
                 <b>Menu not yet released</b>
               </div>
