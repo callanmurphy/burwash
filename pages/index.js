@@ -174,10 +174,10 @@ class Home extends Component {
                       </tr>
                 </table>
               </>
-            : ((today.getMonth() > 0 || today.getDate() > 23) && menu.name == 'ned') ?
-              <div className='center'>
-                <b>Menu not yet released</b>
-              </div>
+            // : (today.getMonth() > 0 || today.getDate() > 23) ?
+            //   <div className='center'>
+            //     <b>Menu not yet released</b>
+            //   </div>
             : <div>
                 { menu.name == 'ned' && !(today.getDay() == 0 || today.getDay() == 6) &&
                   <div className='center space-below'>
