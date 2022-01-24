@@ -6,7 +6,7 @@ import week3 from '../data/burwash2022/week3.json';
 import week4 from '../data/burwash2021/week4.json';
 import ned1 from '../data/ned2022/week1.json';
 import ned2 from '../data/ned2022/week2.json';
-import ned3 from '../data/ned2021/week3.json';
+import ned3 from '../data/ned2022/week3.json';
 import ned4 from '../data/ned2021/week4.json';
 import style1 from '../styles/burwash.module.css';
 import style2 from '../styles/ned.module.css';
