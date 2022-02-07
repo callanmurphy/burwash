@@ -202,11 +202,11 @@ class Home extends Component {
                         <td className='heading new'>{col['title']}</td>
                         <td className='table-newline new'>{col[this.formatDay(today.getDay())]}</td>
                       </tr>
-                      // : ((col['title'] == "MEAT ENTREE" || col['title'] == "VEGETABLE ENTREE" || col['title'] == "SIDES") && menu.name == 'ned' && today.getMonth() == 0) ?
-                      // <tr>
-                      //   <td className='heading strike'>{col['title']}</td>
-                      //   <td className='table-newline strike'>{col[this.formatDay(today.getDay())]}</td>
-                      // </tr>
+                      : ((col['title'] == "MEAT ENTREE" || col['title'] == "VEGETABLE ENTREE" || col['title'] == "SIDES") && menu.name == 'ned') ?
+                      <tr>
+                        <td className='heading strike'>{col['title']}</td>
+                        <td className='table-newline strike'>{col[this.formatDay(today.getDay())]}</td>
+                      </tr>
                       :
                       <tr>
                         <td className='heading'>{col['title']}</td>
