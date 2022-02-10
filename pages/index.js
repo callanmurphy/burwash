@@ -179,16 +179,11 @@ class Home extends Component {
             //     <b>Menu not yet released</b>
             //   </div>
             : <div>
-                { menu.name == 'ned' && !(today.getDay() == 0 || today.getDay() == 6) &&
+                {/* { menu.name == 'ned' && !(today.getDay() == 0 || today.getDay() == 6) &&
                   <div className='center space-below'>
                     <b>Ned's entrees are back :D</b>
                   </div>
-                }
-                {/* 
-                "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts" 
-                "Classic Egg Salad on a Wrap(VEG) / Hummus and Roast Vegetables(VGN) / Tuna Salad on a Kaiser(H) / Roast Turkey and Cheddar Cheese"
-                "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein"
-                */}
+                } */}
                 <table className={'mainTable ' + menu.style['mainTable']}>
                 { weeks[this.getWeek() - 1][menu.index].map((col, index) => !(menu.name == 'ned' && (days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday')) &&
                   ((col[this.formatDay(today.getDay())] != "" && col['title']) != "" || col['title'] == "DINNER") ?
