@@ -189,14 +189,17 @@ class Home extends Component {
                   ((col[this.formatDay(today.getDay())] != "" && col['title']) != "" || col['title'] == "DINNER") ?
                       ( col['title'] == "DAYS" || col['title'] == "DINNER" || col['title'] == "LUNCH" ) ? 
                       <tr>
-                        <th className='heading'>{col['title'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
-                        <th className='heading table-newline'>{days[today.getDay()]}</th>
+                        <th className={index == 0 ? 'heading left-top-table' : 'heading'}>{col['title'] == "DINNER" ? "Dinner" : index == 0 ? 'All Day' : 'Lunch'}</th>
+                        <th className={index == 0 ? 'heading right-top-table' : 'heading'}>{days[today.getDay()]}</th>
                       </tr>
                       : col['title'] == "FOOD BAR" ?
                       <tr>
                         <td className='heading new'>{col['title']}</td>
                         <td className='table-newline new'>{col[this.formatDay(today.getDay())]}</td>
-                      </tr>
+                      </tr> 
+                      : (menu.name == 'ned' && col['title'] != "SOUPS") ?
+                      <></>
+                      // strikethrough
                       // : ((col['title'] == "MEAT ENTREE" || col['title'] == "VEGETABLE ENTREE" || col['title'] == "SIDES") && menu.name == 'ned') ?
                       // <tr>
                       //   <td className='heading strike'>{col['title']}</td>
@@ -212,10 +215,16 @@ class Home extends Component {
                     )
                 }
                 { menu.name == 'ned' && !(days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday') &&
+                <>
+                  <tr>
+                    <td className='heading'>FOOD BAR</td>
+                    <td className='table-newline'>Pasta Bar</td>
+                  </tr>
                   <tr>
                     <td className='heading'>EVERYDAY</td>
                     <td className='table-newline'>Sandwiches / Salads / Snacks / Desserts / Beverages</td>
                   </tr>
+                </>
                 }
                 </table>
                 { menu.name == 'burwash' ?
@@ -400,7 +409,6 @@ class Home extends Component {
             margin: 0 auto;
             text-align: center;
             width: 80%;
-            // border-radius: 10px 10px 0px 0px;
             overflow: hidden;
             font-weight: 300;
           }
@@ -410,6 +418,14 @@ class Home extends Component {
             color: #161616;
             width: 100%;
             overflow: hidden;
+          }
+          
+          .left-top-table {
+            border-top-left-radius: 10px;
+          }
+
+          .right-top-table {
+            border-top-right-radius: 10px;
           }
           
           .mainTable th,
