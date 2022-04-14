@@ -129,63 +129,18 @@ class Home extends Component {
               <div className='center'>
                 <b>Closed for Winter Break</b>
               </div>
-            : (today.getMonth() == 0 && today.getDate() == 9 && menu.name == 'burwash') ?
-              <>
-                <div className='center space-below'>
-                  <b>Dinner Only (first meal of 2022)</b>
-                </div>
-                <table className={'mainTable ' + menu.style['mainTable']}>
-                      <tr>
-                        <th className='heading'>Dinner</th>
-                        <th className='heading table-newline'>Sunday</th>
-                      </tr>
-                      <tr>
-                        <td className='heading'>SOUPS</td>
-                        <td className='table-newline'>{"Minestrone (VGN) \n\n Cream of Mushroom (GF)(DF)"}</td>
-                      </tr>
-                      <tr>
-                        <td className='heading'>PIZZA</td>
-                        <td className='table-newline'>{"3 Cheese (VGN) \n\n Pepperoni"}</td>
-                      </tr>
-                      <tr>
-                        <td className='heading'>SALAD BAR</td>
-                        <td className='table-newline'>{"Green salad, Crudités, Composed Salads, Dressings"}</td>
-                      </tr>
-                      <tr>
-                        <td className='heading'>DESSERT</td>
-                        <td className='table-newline'>{"Assorted Brownies"}</td>
-                      </tr>
-
-                      <tr>
-                        <th className='heading'></th>
-                        <th className='heading table-newline'></th>
-                      </tr>
-                      <tr>
-                        <td className='heading'>MEAT</td>
-                        <td className='table-newline'>{"Roast Chicken with Swiss Chalet Sauce \n (H)(GF)(DF)"}</td>
-                      </tr>
-                      <tr>
-                        <td className='heading'>VEGETARIAN</td>
-                        <td className='table-newline'>{"Chickpea and Vegetable Curry \n (VGN)(GF)"}</td>
-                      </tr>
-                      <tr>
-                        <td className='heading'>SIDES</td>
-                        <td className='table-newline'>{"Rice Pilaf (VGN)(GF) \n\n Spanakopita (2pcs)(VEG) \n\n Roasted California Medley"}</td>
-                      </tr>
-                </table>
-              </>
-            // : (today.getMonth() > 0 || today.getDate() > 23) ?
-            //   <div className='center'>
-            //     <b>Menu not yet released</b>
-            //   </div>
+            : (today.getMonth() >= 4) ?
+              <div className='center'>
+                <b>Closed for summer :D</b>
+              </div>
             : <div>
-                {/* { menu.name == 'ned' && !(today.getDay() == 0 || today.getDay() == 6) &&
+                { today.getDate() == 15 && today.getMonth() == 3 &&
                   <div className='center space-below'>
-                    <b>Ned's entrees are back :D</b>
+                    <b>Good Friday – Weekend Hours</b>
                   </div>
-                } */}
+                }
                 <table className={'mainTable ' + menu.style['mainTable']}>
-                { weeks[this.getWeek() - 1][menu.index].map((col, index) => !(menu.name == 'ned' && (days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday')) &&
+                { weeks[this.getWeek() - 1][menu.index].map((col, index) => !(menu.name == 'ned' && (days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday' || today.getDate() == 15 && today.getMonth() == 3)) &&
                   ((col[this.formatDay(today.getDay())] != "" && col['title']) != "" || col['title'] == "DINNER") ?
                       ( col['title'] == "DAYS" || col['title'] == "DINNER" || col['title'] == "LUNCH" ) ? 
                       <tr>
@@ -214,7 +169,7 @@ class Home extends Component {
                       null
                     )
                 }
-                { menu.name == 'ned' && !(days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday') &&
+                { menu.name == 'ned' && !(days[today.getDay()] == 'Sunday' || days[today.getDay()] == 'Saturday' || today.getDate() == 15 && today.getMonth() == 3) &&
                 <>
                   <tr>
                     <td className='heading'>FOOD BAR</td>
@@ -230,7 +185,7 @@ class Home extends Component {
                 { menu.name == 'burwash' ?
                   <div id='schedule' className={'space-above'}>
                     <h3 className={menu.style['schedule-title'] + ' center'}>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Schedule</h3>
-                    { today.getDay() == 0 || today.getDay() == 6 ?
+                    { today.getDay() == 0 || today.getDay() == 6 || today.getDate() == 15 && today.getMonth() == 3 ?
                       <div className="title2">
                         <b>Saturday, Sunday & Holidays</b>
                         <p>Brunch 10:00 a.m. - 2:30 p.m.</p>
@@ -247,7 +202,7 @@ class Home extends Component {
                   </div> :
                   <div id='schedule' className={today.getDay() == 0 || today.getDay() == 6 ? '' : 'space-above'}>
                   <h3 className={menu.style['schedule-title'] + ' center'}>{menu.name == 'burwash' ? 'Burwash' : 'Ned\'s'} Schedule</h3>
-                  { today.getDay() == 0 || today.getDay() == 6 ?
+                  { today.getDay() == 0 || today.getDay() == 6 || today.getDate() == 15 && today.getMonth() == 3 ?
                     <div className="title2">
                       <b>Saturday, Sunday & Holidays</b>
                       <p>Closed</p>
