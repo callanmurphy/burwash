@@ -129,7 +129,7 @@ class Home extends Component {
               <div className='center'>
                 <b>Closed for Winter Break</b>
               </div>
-            : (today.getMonth() >= 4) ?
+            : (today.getMonth() > 3 || (today.getMonth() == 3 && today.getDate() > 29)) ?
               <div className='center'>
                 <b>Closed for summer :D</b>
               </div>
