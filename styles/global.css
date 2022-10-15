@@ -1,24 +1,18 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
 .heading {
   font-weight: 500;
 }
 
-.nav-bar {
-  position: absolute;
-  /* position: fixed; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  background: #A30031;
-  height: 80px;
-  z-index: 10;
-  -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-  -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-  box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-}
+/* .column-big {
+  // padding-right: 45px;
+} */
 
 .alert-bar {
   position: absolute;
@@ -31,20 +25,57 @@
   left: 0px;
   right: 0px;
   width: 100%;
-  background: #FFFF60;
+  background: #ffff60;
   /* height: 50px; */
   z-index: 20;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-  -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-  box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
 }
 
 .alert-bar h2 {
   font-size: 16px;
+}
+
+.new-year {
+  position: absolute;
+  width: 60px;
+  left: 245px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 112px;
+  transform: rotate(20deg);
+}
+
+.not-bolded {
+  font-weight: 300;
+}
+
+.new-year-ned {
+  position: absolute;
+  width: 60px;
+  left: 210px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 112px;
+  transform: rotate(20deg);
+}
+
+.new-ribbon {
+  position: absolute;
+  width: 50px;
+  left: 143px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 225px;
+  transform: rotate(25deg);
 }
 
 main {
@@ -70,22 +101,19 @@ main {
 }
 
 .space-above {
-  padding-top: 45px;
+  padding-top: 35px;
+}
+
+.margin-above {
+  margin-top: 60px;
 }
 
 .space-below {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 h2 {
-  font-size: 26px
-}
-
-.subtitle {
-  text-align: center;
-  width: 200px;
-  color: #A30031;
-  font-weight: 400;
+  font-size: 26px;
 }
 
 .other-day {
@@ -96,15 +124,8 @@ h2 {
   margin: 0 auto;
   text-align: center;
   width: 80%;
-  border-radius: 10px 10px 0px 0px;
   overflow: hidden;
   font-weight: 300;
-}
-
-.mainTable th {
-  background-color: #A30031;
-  height: 50px;
-  color: #ffffff;
 }
 
 .mainTable tr {
@@ -114,18 +135,26 @@ h2 {
   overflow: hidden;
 }
 
+.left-top-table {
+  border-top-left-radius: 10px;
+}
+
+.right-top-table {
+  border-top-right-radius: 10px;
+}
+
 .mainTable th,
 .mainTable td {
   padding: 12px 15px;
 }
 
-.mainTable th:first-child {
-  border-radius: 10px 0 0 0px;
-}
+/* .mainTable th:first-child {
+  // border-radius: 10px 0 0 0px;
+} */
 
-.mainTable th:last-child {
-  border-radius: 0 10px 0px 0;
-}
+/* .mainTable th:last-child {
+  // border-radius: 0 10px 0px 0;
+} */
 
 .mainTable tr:nth-of-type(even) {
   background-color: #f7f7f7;
@@ -136,29 +165,12 @@ h2 {
   width: 70%;
 }
 
-.green {
-  background-color: #58ad60
-}
-
-
 .row-container {
   justify-content: center;
   text-align: center;
   display: flex;
   flex-direction: row;
   /* // margin-bottom: 30px; */
-}
-
-.arrow {
-  background-color: #A30031;
-  border-radius: 10px;
-  border: none;
-  align-self: flex-start;
-  color: white;
-  padding: 8px 18px;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: 10px;
 }
 
 .today {
@@ -174,10 +186,6 @@ h2 {
 
 .undo {
   width: 40px;
-}
-
-.arrow:hover {
-  background-color: #7A0025;
 }
 
 footer {
@@ -219,8 +227,86 @@ a {
   margin-right: 12px;
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
+/* // toggle switch css source: https://www.w3schools.com/howto/howto_css_switch.asp */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  align-self: flex-start;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0 !important;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a30031;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #58ad60;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #58ad60;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 0px) and (max-width: 650px) {
   .mainTable {
     width: 98%;
   }
+}
+
+* {
+  box-sizing: border-box;
 }

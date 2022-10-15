@@ -8,29 +8,28 @@
   left: 0px;
   right: 0px;
   width: 100%;
-  background: #A30031;
+  background: #a30031;
   height: 80px;
   z-index: 10;
-  -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-  -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-  box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
 }
 
 .subtitle {
   text-align: center;
   width: 200px;
-  color: #A30031;
+  color: #a30031;
   font-weight: 400;
 }
 
 .schedule-title {
-  color: #A30031;
+  color: #a30031;
   font-weight: 600;
 }
 
-
 .mainTable th {
-  background-color: #A30031;
+  background-color: #a30031;
   height: 50px;
   color: #ffffff;
   /* border-top-left-radius: 10px;
@@ -38,7 +37,7 @@
 }
 
 .arrow {
-  background-color: #A30031;
+  background-color: #a30031;
   border-radius: 10px;
   border: none;
   align-self: flex-start;
@@ -51,7 +50,7 @@
 }
 
 .swap {
-  background-color: #A30031;
+  background-color: #a30031;
   border-radius: 10px;
   border: none;
   align-self: flex-start;
@@ -65,5 +64,5 @@
 }
 
 .arrow:hover {
-  background-color: #7A0025;
+  background-color: #7a0025;
 }

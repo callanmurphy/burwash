@@ -11,9 +11,9 @@
   background: #58ad60;
   height: 80px;
   z-index: 10;
-  -webkit-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-  -moz-box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
-  box-shadow: 0px 0px 6px 3px rgba(41,41,41,.25);
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px 0px 6px 3px rgba(41, 41, 41, 0.25);
 }
 
 .subtitle {
@@ -62,5 +62,5 @@
 }
 
 .arrow:hover {
-  background-color: #488E4F;
+  background-color: #488e4f;
 }
